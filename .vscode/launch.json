@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Solution",
+            "request": "launch",
+            "mainClass": "java.mainclass.Solution",
+            "projectName": "100DaysofCode_1571ce51"
+        }
+    ]
+}
