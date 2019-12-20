@@ -12,12 +12,12 @@
         "source": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\src\\main\\res\\layout\\activity_otp.xml"
     },
     {
-        "merged": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\build\\intermediates\\res\\merged\\debug\\drawable_edittext_pin_rounded.xml.flat",
-        "source": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\src\\main\\res\\drawable\\edittext_pin_rounded.xml"
-    },
-    {
         "merged": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
         "source": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\build\\intermediates\\res\\merged\\debug\\drawable_edittext_pin_rounded.xml.flat",
+        "source": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\src\\main\\res\\drawable\\edittext_pin_rounded.xml"
     },
     {
         "merged": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -28,12 +28,12 @@
         "source": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\build\\intermediates\\res\\merged\\debug\\font_poppins_bold.otf.flat",
-        "source": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\src\\main\\res\\font\\poppins_bold.otf"
-    },
-    {
         "merged": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_curve_black.xml.flat",
         "source": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\src\\main\\res\\drawable\\button_curve_black.xml"
+    },
+    {
+        "merged": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\build\\intermediates\\res\\merged\\debug\\font_poppins_bold.otf.flat",
+        "source": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\src\\main\\res\\font\\poppins_bold.otf"
     },
     {
         "merged": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\build\\intermediates\\res\\merged\\debug\\layout_banner_layout.xml.flat",
@@ -202,6 +202,10 @@
     {
         "merged": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_facebook.xml.flat",
         "source": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\src\\main\\res\\drawable\\ic_facebook.xml"
+    },
+    {
+        "merged": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl_ic_right_arrow.xml.flat",
+        "source": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\src\\main\\res\\drawable-ldrtl\\ic_right_arrow.xml"
     },
     {
         "merged": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_settings.xml.flat",

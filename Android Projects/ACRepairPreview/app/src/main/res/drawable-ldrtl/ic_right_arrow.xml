@@ -3,4 +3,3 @@
     android:width="6.828dp" xmlns:android="http://schemas.android.com/apk/res/android">
     <path android:fillColor="#8d8d8d" android:pathData="M4.769,5.97L0.249,1.454a0.854,0.854 0,0 1,1.21 -1.205l5.12,5.117a0.852,0.852 0,0 1,0.025 1.177l-5.141,5.152a0.854,0.854 0,0 1,-1.214 -1.206z"/>
 </vector>
-

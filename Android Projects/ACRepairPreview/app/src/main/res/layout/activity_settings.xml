@@ -42,6 +42,7 @@
         <FrameLayout
             android:id="@+id/flEditProfile"
             android:layout_width="match_parent"
+            android:textDirection="locale"
             android:layout_height="50dp"
             android:layout_marginTop="1dp"
             android:background="@color/white"
@@ -55,7 +56,8 @@
             <TextView
                 android:id="@+id/textViewEditProfile"
                 style="@style/blackTextViewStyleMediumSize"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
+                android:textDirection="locale"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="15dp"
@@ -88,7 +90,8 @@
             <TextView
                 android:id="@+id/textViewAboutUs"
                 style="@style/blackTextViewStyleMediumSize"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
+                android:textDirection="locale"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="15dp"
@@ -122,10 +125,13 @@
             <TextView
                 android:id="@+id/textViewTermsandCondition"
                 style="@style/blackTextViewStyleMediumSize"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
+                android:textDirection="locale"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="15dp"
+
                 android:letterSpacing="0.1"
                 android:text="@string/termsandcondition" />
 
@@ -156,11 +162,14 @@
             <TextView
                 android:id="@+id/textViewPrivacyPolicy"
                 style="@style/blackTextViewStyleMediumSize"
-                android:layout_width="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_width="match_parent"
+                android:textDirection="locale"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="15dp"
                 android:letterSpacing="0.1"
+
                 android:text="@string/privacyandpolicy" />
 
             <ImageView
@@ -190,7 +199,9 @@
             <TextView
                 android:id="@+id/textViewCancellationPoilcy"
                 style="@style/blackTextViewStyleMediumSize"
-                android:layout_width="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_width="match_parent"
+                android:textDirection="locale"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="15dp"
@@ -224,7 +235,9 @@
             <TextView
                 android:id="@+id/textViewFAQ"
                 style="@style/blackTextViewStyleMediumSize"
-                android:layout_width="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_width="match_parent"
+                android:textDirection="locale"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="15dp"
@@ -260,7 +273,9 @@
             <TextView
                 android:id="@+id/textViewContactUs"
                 style="@style/blackTextViewStyleMediumSize"
-                android:layout_width="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_width="match_parent"
+                android:textDirection="locale"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="15dp"
@@ -295,7 +310,9 @@
             <TextView
                 android:id="@+id/textViewFeedBack"
                 style="@style/blackTextViewStyleMediumSize"
-                android:layout_width="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_width="match_parent"
+                android:textDirection="locale"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="15dp"
@@ -329,7 +346,9 @@
             <TextView
                 android:id="@+id/textViewRateUs"
                 style="@style/blackTextViewStyleMediumSize"
-                android:layout_width="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_width="match_parent"
+                android:textDirection="locale"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="15dp"
@@ -363,7 +382,9 @@
             <TextView
                 android:id="@+id/textViewChangeLanguage"
                 style="@style/blackTextViewStyleMediumSize"
-                android:layout_width="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_width="match_parent"
+                android:textDirection="locale"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="15dp"
@@ -398,7 +419,9 @@
             <TextView
                 android:id="@+id/textViewLogout"
                 style="@style/blackTextViewStyleMediumSize"
-                android:layout_width="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_width="match_parent"
+                android:textDirection="locale"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="15dp"
