@@ -21,11 +21,11 @@ import java.lang.Override;
 public class WelcomeActivity_ViewBinding implements Unbinder {
   private WelcomeActivity target;
 
-  private View view7f090165;
+  private View view7f090169;
 
   private View view7f090056;
 
-  private View view7f090170;
+  private View view7f090174;
 
   @UiThread
   public WelcomeActivity_ViewBinding(WelcomeActivity target) {
@@ -47,7 +47,7 @@ public class WelcomeActivity_ViewBinding implements Unbinder {
     target.guideline4 = Utils.findRequiredViewAsType(source, R.id.guideline4, "field 'guideline4'", Guideline.class);
     view = Utils.findRequiredView(source, R.id.textViewForgotPassword, "field 'textViewForgotPassword' and method 'onViewClicked'");
     target.textViewForgotPassword = Utils.castView(view, R.id.textViewForgotPassword, "field 'textViewForgotPassword'", TextView.class);
-    view7f090165 = view;
+    view7f090169 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -76,7 +76,7 @@ public class WelcomeActivity_ViewBinding implements Unbinder {
     target.guideline7 = Utils.findRequiredViewAsType(source, R.id.guideline7, "field 'guideline7'", Guideline.class);
     view = Utils.findRequiredView(source, R.id.textViewSignUp, "field 'textViewSignUp' and method 'onViewClicked'");
     target.textViewSignUp = Utils.castView(view, R.id.textViewSignUp, "field 'textViewSignUp'", TextView.class);
-    view7f090170 = view;
+    view7f090174 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -117,11 +117,11 @@ public class WelcomeActivity_ViewBinding implements Unbinder {
     target.textViewSignUp = null;
     target.textViewDontHaveAnAccount = null;
 
-    view7f090165.setOnClickListener(null);
-    view7f090165 = null;
+    view7f090169.setOnClickListener(null);
+    view7f090169 = null;
     view7f090056.setOnClickListener(null);
     view7f090056 = null;
-    view7f090170.setOnClickListener(null);
-    view7f090170 = null;
+    view7f090174.setOnClickListener(null);
+    view7f090174 = null;
   }
 }

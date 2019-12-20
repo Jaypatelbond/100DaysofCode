@@ -125,10 +125,10 @@ public class HomeListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         //Initilizing the  BannerAdapter，and adding child view to UltraViewPager
         PagerAdapter pagerAdapter = new TopOfferViewPagerAdapter(true);
         holder.ultraViewPagerTopOffer.setAdapter(pagerAdapter);
-        holder.ultraViewPagerTopOffer.setOffscreenPageLimit(1);
+        holder.ultraViewPagerTopOffer.setOffscreenPageLimit(2);
         holder.ultraViewPagerTopOffer.setScrollMode(UltraViewPager.ScrollMode.HORIZONTAL);
         //Setting the multiscreen images.
-        holder.ultraViewPagerTopOffer.setMultiScreen(0.6f);
+        holder.ultraViewPagerTopOffer.setMultiScreen(0.9f);
         //viewPager.setItemRatio(1.0f);
         holder.txtCategoryName.setText("Top Offers");
     }

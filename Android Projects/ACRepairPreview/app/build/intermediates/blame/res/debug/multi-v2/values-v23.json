@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Jaypa\\AndroidStudioProjects\\ACRepairPreview\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Jaypa\\.gradle\\caches\\transforms-2\\files-2.1\\432d9e99fa5ade631ab88cbdd61946cc\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",

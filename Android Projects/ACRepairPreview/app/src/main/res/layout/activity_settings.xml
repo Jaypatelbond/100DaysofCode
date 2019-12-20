@@ -361,14 +361,14 @@
             app:layout_constraintVertical_bias="0.0">
 
             <TextView
-                android:id="@+id/textViewAppSharing"
+                android:id="@+id/textViewChangeLanguage"
                 style="@style/blackTextViewStyleMediumSize"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="15dp"
                 android:letterSpacing="0.1"
-                android:text="@string/appsharing" />
+                android:text="@string/change_language" />
 
             <ImageView
                 android:layout_width="wrap_content"

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Jaypa\\AndroidStudioProjects\\ACRepairPreview\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
+            "outputFile": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Jaypa\\.gradle\\caches\\transforms-2\\files-2.1\\70e55aebe16339e37ba23c0cc6759ff0\\media-1.0.0\\res\\values-v21\\values-v21.xml",
