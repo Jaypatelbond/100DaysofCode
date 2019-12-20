@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">إصلاح التيار المتردد</string>
+    <string name="change_language">Change Language / غير اللغة</string>
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="password">كلمه السر</string>
+    <string name="forgot_password">هل نسيت كلمة المرور؟</string>
+    <string name="orconnectwith">أو التواصل مع</string>
+    <string name="sign_up">سجل</string>
+    <string name="don_t_have_an_account">ليس لديك حساب</string>
+    <string name="firstname">الاسم الاول</string>
+    <string name="lastname">الكنية</string>
+    <string name="phonenumber">رقم الهاتف</string>
+    <string name="confirmpassword">تأكيد كلمة المرور</string>
+    <string name="already_have_an_account">هل لديك حساب</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="english">English</string>
+    <string name="arabic">عربى</string>
+    <string name="arabicinenglish">Arabic</string>
+    <string name="continues">Continue / استمر</string>
+    <string name="we_have_sent_you_access_code_via_sms_for_mobile_number_verification">
+        We have sent you access code via SMS for mobile number verification</string>
+    <string name="enter_otp">OTP درج کریں</string>
+    <string name="didn_t_receive_the_otp">OTP نہیں ملا؟</string>
+    <string name="submit">جمع</string>
+    <string name="resend_code">کوڈ پھر سے بھیجو</string>
+    <string name="your_location">Your Location</string>
+    <string name="our_services">Our Services</string>
+    <string name="ac_services">AC Services</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="aboutus">About Us</string>
+    <string name="termsandcondition">Terms &amp; Condition</string>
+    <string name="privacyandpolicy">Privacy &amp; Policy</string>
+    <string name="cancellationpolicy">Cancellation Policy</string>
+    <string name="faq">FAQ</string>
+    <string name="contactus">Contact Us</string>
+    <string name="feedback">Feedback</string>
+    <string name="appsharing">App Sharing</string>
+    <string name="rateus">Rate Us</string>
+    <string name="logout">Logout</string>
+    <string name="ac_installation_remove">AC Installation/ Remove</string>
+    <string name="athome">at Home</string>
+    <string name="price">\@ Rs 199/-</string>
+    <string name="_5_0">5.0</string>
+    <string name="demo_name">Demo Name</string>
+    <string name="north_udaipur_20th_december_2019">North Udaipur, 20th December 2019</string>
+    <string name="great_service_very_polite">Great service, very polite.</string>
+</resources>

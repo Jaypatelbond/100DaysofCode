@@ -1,0 +1,67 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="titleTextColor">#FFF</item>
+    </style>
+
+
+    <style name="blackTextViewStyleLargeSize" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/app_black</item>
+        <item name="android:fontFamily">@font/avenir_medium</item>
+    </style>
+
+    <style name="blackTextViewBoldLargeSize" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/app_black</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="blackTextViewBoldMediumSizePoppins" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/app_black</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="blackTextViewStyleMediumSize" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/app_black</item>
+        <item name="android:fontFamily">@font/avenir_roman</item>
+    </style>
+
+    <style name="blackTextViewStyleSmallSize" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:fontFamily">@font/avenir_roman</item>
+    </style>
+
+    <style name="whiteTextViewStyleSmallSize" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="whiteTextViewStyleSmallSizePoppins" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="whiteTextViewStyleMediumSizePoppins" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <declare-styleable name="DashedUnderlinedTextView">
+        <attr name="underlineWidth" format="dimension" />
+        <attr name="underlineColor" format="color" />
+        <attr name="underlinePadding" format="integer"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".activities.SettingsActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageViewBack"
+            android:layout_width="21dp"
+            android:layout_height="22dp"
+            android:contentDescription="@null"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.06"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/toolbar"
+            app:srcCompat="@drawable/ic_back_button_white" />
+
+
+        <FrameLayout
+            android:id="@+id/flEditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:elevation="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            app:layout_constraintVertical_bias="0.010">
+
+            <TextView
+                android:id="@+id/textViewEditProfile"
+                style="@style/blackTextViewStyleMediumSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:text="@string/edit_profile" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/ic_right_arrow"
+                android:contentDescription="@null" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flAboutUs"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:elevation="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/flEditProfile"
+            app:layout_constraintVertical_bias="0.010">
+
+            <TextView
+                android:id="@+id/textViewAboutUs"
+                style="@style/blackTextViewStyleMediumSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:letterSpacing="0.1"
+                android:text="@string/aboutus" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/ic_right_arrow"
+                android:contentDescription="@null" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flTermsandCondition"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:elevation="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/flAboutUs"
+            app:layout_constraintVertical_bias="0">
+
+            <TextView
+                android:id="@+id/textViewTermsandCondition"
+                style="@style/blackTextViewStyleMediumSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:letterSpacing="0.1"
+                android:text="@string/termsandcondition" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/ic_right_arrow"
+                android:contentDescription="@null" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flPrivacyPolicy"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:elevation="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/flTermsandCondition"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/textViewPrivacyPolicy"
+                style="@style/blackTextViewStyleMediumSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:letterSpacing="0.1"
+                android:text="@string/privacyandpolicy" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/ic_right_arrow"
+                android:contentDescription="@null" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flCancellationPolicy"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:elevation="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/flPrivacyPolicy"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/textViewCancellationPoilcy"
+                style="@style/blackTextViewStyleMediumSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:letterSpacing="0.1"
+                android:text="@string/cancellationpolicy" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/ic_right_arrow"
+                android:contentDescription="@null" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flFAQ"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:elevation="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/flCancellationPolicy"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/textViewFAQ"
+                style="@style/blackTextViewStyleMediumSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:letterSpacing="0.2"
+                android:text="@string/faq"
+                tools:targetApi="lollipop" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/ic_right_arrow"
+                android:contentDescription="@null" />
+
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/flContactUs"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:elevation="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/flFAQ"
+            app:layout_constraintVertical_bias="0.010">
+
+            <TextView
+                android:id="@+id/textViewContactUs"
+                style="@style/blackTextViewStyleMediumSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:letterSpacing="0.1"
+                android:text="@string/contactus" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/ic_right_arrow"
+                android:contentDescription="@null" />
+
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/flFeedBack"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:elevation="1dp"
+            android:layout_marginTop="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/flContactUs"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/textViewFeedBack"
+                style="@style/blackTextViewStyleMediumSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:letterSpacing="0.1"
+                android:text="@string/feedback" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/ic_right_arrow"
+                android:contentDescription="@null" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flRateUs"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:elevation="1dp"
+            android:layout_marginTop="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/flFeedBack"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/textViewRateUs"
+                style="@style/blackTextViewStyleMediumSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:letterSpacing="0.1"
+                android:text="@string/rateus" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/ic_right_arrow"
+                android:contentDescription="@null" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flAppSharing"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:elevation="1dp"
+            android:layout_marginTop="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/flRateUs"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/textViewAppSharing"
+                style="@style/blackTextViewStyleMediumSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:letterSpacing="0.1"
+                android:text="@string/appsharing" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/ic_right_arrow"
+                android:contentDescription="@null" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flLogout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white"
+            android:elevation="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/flAppSharing"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/textViewLogout"
+                style="@style/blackTextViewStyleMediumSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:letterSpacing="0.1"
+                android:text="@string/logout" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/ic_right_arrow"
+                android:contentDescription="@null" />
+
+
+        </FrameLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#e1e1e1"
+            app:layout_constraintTop_toBottomOf="@+id/flAboutUs" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e1e1e1"
+            app:layout_constraintTop_toBottomOf="@+id/flTermsandCondition" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e1e1e1"
+            app:layout_constraintTop_toBottomOf="@+id/flPrivacyPolicy" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e1e1e1"
+            app:layout_constraintTop_toBottomOf="@+id/flCancellationPolicy" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e1e1e1"
+            app:layout_constraintTop_toBottomOf="@+id/flContactUs" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e1e1e1"
+            app:layout_constraintTop_toBottomOf="@+id/flFeedBack" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e1e1e1"
+            app:layout_constraintTop_toBottomOf="@+id/flRateUs" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
