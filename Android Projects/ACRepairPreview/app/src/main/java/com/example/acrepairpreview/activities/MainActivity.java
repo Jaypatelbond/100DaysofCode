@@ -80,7 +80,7 @@ public class MainActivity extends BaseActivity {
 
         //initialize built-in indicator
         viewPager.initIndicator();
-        //set style of indicators
+        //Set style of indicators
         viewPager.getIndicator()
                 .setOrientation(UltraViewPager.Orientation.HORIZONTAL)
                 .setFocusColor(Color.GRAY)

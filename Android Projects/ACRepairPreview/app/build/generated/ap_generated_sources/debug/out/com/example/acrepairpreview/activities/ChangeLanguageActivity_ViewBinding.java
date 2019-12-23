@@ -21,11 +21,11 @@ public class ChangeLanguageActivity_ViewBinding implements Unbinder {
 
   private View view7f0900cd;
 
-  private View view7f090166;
+  private View view7f090165;
+
+  private View view7f09015d;
 
   private View view7f09015e;
-
-  private View view7f09015f;
 
   private View view7f090054;
 
@@ -54,7 +54,7 @@ public class ChangeLanguageActivity_ViewBinding implements Unbinder {
     target.textViewTitle = Utils.findRequiredViewAsType(source, R.id.textViewTitle, "field 'textViewTitle'", TextView.class);
     view = Utils.findRequiredView(source, R.id.textViewEnglish, "field 'textViewEnglish' and method 'onViewClicked'");
     target.textViewEnglish = Utils.castView(view, R.id.textViewEnglish, "field 'textViewEnglish'", TextView.class);
-    view7f090166 = view;
+    view7f090165 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -63,7 +63,7 @@ public class ChangeLanguageActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.textViewArabic, "field 'textViewArabic' and method 'onViewClicked'");
     target.textViewArabic = Utils.castView(view, R.id.textViewArabic, "field 'textViewArabic'", TextView.class);
-    view7f09015e = view;
+    view7f09015d = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -72,7 +72,7 @@ public class ChangeLanguageActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.textViewArabicEnglish, "field 'textViewArabicEnglish' and method 'onViewClicked'");
     target.textViewArabicEnglish = Utils.castView(view, R.id.textViewArabicEnglish, "field 'textViewArabicEnglish'", TextView.class);
-    view7f09015f = view;
+    view7f09015e = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -117,12 +117,12 @@ public class ChangeLanguageActivity_ViewBinding implements Unbinder {
 
     view7f0900cd.setOnClickListener(null);
     view7f0900cd = null;
-    view7f090166.setOnClickListener(null);
-    view7f090166 = null;
+    view7f090165.setOnClickListener(null);
+    view7f090165 = null;
+    view7f09015d.setOnClickListener(null);
+    view7f09015d = null;
     view7f09015e.setOnClickListener(null);
     view7f09015e = null;
-    view7f09015f.setOnClickListener(null);
-    view7f09015f = null;
     view7f090054.setOnClickListener(null);
     view7f090054 = null;
   }

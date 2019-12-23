@@ -14,6 +14,7 @@ public class Dynamic {
     public List<Dynamic> getDynamic() {
         getOurServicesLists();
         getTopOffersLists();
+        getCustomerReviews();
         return dynamic;
     }
 
@@ -48,6 +49,20 @@ public class Dynamic {
     public void setTopOffersLists(List<TopOffersList> topOffersLists) {
         this.topOffersLists = topOffersLists;
     }
+
+    public List<CustomerReview> getCustomerReviews() {
+        List<CustomerReview> customerReviews = new ArrayList<>();
+        customerReviews.add(new CustomerReview("5.0", "Excellent Service, very polite", "Customer Name", "North Udaipur, 23rd of December", R.drawable.profile));
+        customerReviews.add(new CustomerReview("5.0", "Excellent Service, very polite", "Customer Name", "North Udaipur, 23rd of December", R.drawable.profile));
+        customerReviews.add(new CustomerReview("5.0", "Excellent Service, very polite", "Customer Name", "North Udaipur, 23rd of December", R.drawable.profile));
+        return customerReviews;
+    }
+
+    public void setCustomerReviews(List<CustomerReview> customerReviews) {
+        this.customerReviews = customerReviews;
+    }
+
+    List<CustomerReview> customerReviews;
 
     List<OurServicesList> ourServicesLists;
 

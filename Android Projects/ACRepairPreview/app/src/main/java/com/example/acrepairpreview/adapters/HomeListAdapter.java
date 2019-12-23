@@ -9,10 +9,12 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.PagerAdapter;
 
 import com.example.acrepairpreview.R;
+import com.example.acrepairpreview.model.CustomerReview;
 import com.example.acrepairpreview.model.Dynamic;
 import com.example.acrepairpreview.model.OurServicesList;
 import com.example.acrepairpreview.model.TopOffersList;
@@ -36,7 +38,7 @@ public class HomeListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     public HomeListAdapter(Context context, List<Dynamic> dynamic) {
         this.context = context;
         this.dynamic = dynamic;
-        this.size = getOurServicesLists().size() + getTopOffersLists().size();
+        this.size = getOurServicesLists().size() + getTopOffersLists().size() + getCustomerReview().size();
     }
 
     public class ViewHolderOurServices extends RecyclerView.ViewHolder {
@@ -52,23 +54,25 @@ public class HomeListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     }
 
     public class ViewHolderCustomerReviews extends RecyclerView.ViewHolder {
+        public RecyclerView recyclerViewDynamic;
+        public TextView txtCategoryName;
         private ViewHolderCustomerReviews(View itemView) {
             super(itemView);
+            recyclerViewDynamic = itemView.findViewById(R.id.recyclerViewDynamic);
+            txtCategoryName = itemView.findViewById(R.id.txtCategoryName);
+            recyclerViewDynamic.setLayoutManager(new LinearLayoutManager(context, RecyclerView.VERTICAL, false));
 
         }
     }
 
     public class ViewHolderTopOffers extends RecyclerView.ViewHolder {
         public TextView txtCategoryName;
-//        public RecyclerView recyclerViewDynamic;
         UltraViewPager ultraViewPagerTopOffer;
 
 
         private ViewHolderTopOffers(View itemView) {
             super(itemView);
             txtCategoryName = itemView.findViewById(R.id.txtCategoryName);
-//            recyclerViewDynamic = itemView.findViewById(R.id.recyclerViewDynamic);
-//            recyclerViewDynamic.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false));
             ultraViewPagerTopOffer = itemView.findViewById(R.id.viewPagerTopOffer);
 
 
@@ -116,6 +120,7 @@ public class HomeListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     }
 
     private void initLayoutOurServices(ViewHolderOurServices holder, int position) {
+        holder.txtCategoryName.setText(R.string.our_services);
         OurServicesAdapter ourServicesAdapter = new OurServicesAdapter(context, getOurServicesLists());
         holder.recyclerViewDynamic.setAdapter(ourServicesAdapter);
     }
@@ -129,11 +134,13 @@ public class HomeListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         holder.ultraViewPagerTopOffer.setScrollMode(UltraViewPager.ScrollMode.HORIZONTAL);
         //Setting the multiscreen images.
         holder.ultraViewPagerTopOffer.setMultiScreen(0.9f);
-        //viewPager.setItemRatio(1.0f);
         holder.txtCategoryName.setText("Top Offers");
     }
 
     private void initLayoutCustomerReviews(ViewHolderCustomerReviews holder, int position) {
+        holder.txtCategoryName.setText(R.string.review_title);
+        CustomerReviewsAdapter reviewsAdapter =  new CustomerReviewsAdapter(context, getCustomerReview());
+        holder.recyclerViewDynamic.setAdapter(reviewsAdapter);
     }
 
     private void noLayout(ViewHolderEmpty holder, int position) {
@@ -141,17 +148,18 @@ public class HomeListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
     @Override
     public int getItemCount() {
-        return 2;
+        return 3;
     }
 
     @Override
     public int getItemViewType(int position) {
-        if (position == 1) {
+        if (position == 2) {
+            return TYPE_CUSTOMER_REVIEWS;
+        } else if (position == 1) {
             return TYPE_TOP_OFFERS;
         } else {
             return TYPE_OUR_SERVICES;
         }
-
     }
 
     public List<OurServicesList> getOurServicesLists() {
@@ -170,6 +178,14 @@ public class HomeListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         topOffersLists.add(new TopOffersList("AC Installation / Remove", "at Home", "@Rs 199/-"));
         topOffersLists.add(new TopOffersList("Repairing", "at Home", "@Rs 299/-"));
         return topOffersLists;
+    }
+
+    public List<CustomerReview> getCustomerReview(){
+        List<CustomerReview> customerReviews = new ArrayList<>();
+        customerReviews.add(new CustomerReview("5.0", "Excellent Service, very polite", "Customer Name", "North Udaipur, 23rd of December", R.drawable.profile));
+        customerReviews.add(new CustomerReview("5.0", "Excellent Service, very polite", "Customer Name", "North Udaipur, 23rd of December", R.drawable.profile));
+        customerReviews.add(new CustomerReview("5.0", "Excellent Service, very polite", "Customer Name", "North Udaipur, 23rd of December", R.drawable.profile));
+        return customerReviews;
     }
 }
 

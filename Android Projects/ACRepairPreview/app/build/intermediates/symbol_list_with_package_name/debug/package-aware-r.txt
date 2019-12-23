@@ -1595,12 +1595,11 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
-id textView
 id textView2
 id textView3
-id textView4
 id textViewACInstallation
 id textViewAboutUs
+id textViewAddress
 id textViewAlreadyHaveAnAccount
 id textViewArabic
 id textViewArabicEnglish
@@ -1617,11 +1616,14 @@ id textViewForgotPassword
 id textViewLocation
 id textViewLogin
 id textViewLogout
+id textViewName
 id textViewOfferPrice
 id textViewOrConnectWith
 id textViewPrivacyPolicy
 id textViewRateUs
+id textViewRating
 id textViewResendCode
+id textViewReview
 id textViewServices
 id textViewSignInLabel
 id textViewSignUp
@@ -1854,6 +1856,7 @@ string price
 string privacyandpolicy
 string rateus
 string resend_code
+string review_title
 string search_menu_title
 string sign_in
 string sign_up

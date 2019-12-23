@@ -50,7 +50,6 @@ public class OurServicesAdapter extends RecyclerView.Adapter<OurServicesAdapter.
                      if(ourServicesLists.get(position).getTitle().equalsIgnoreCase("More")){
                          context.startActivity(new Intent(context, SettingsActivity.class));
                      }
-
                  }
              });
     }

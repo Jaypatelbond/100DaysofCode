@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <color name="app_black">#262626</color>
+    <color name="black">#000000</color>
+    <color name="colorAccent">#6f6f6f</color>
+    <color name="colorPrimary">#E1000000</color>
+    <color name="colorPrimaryDark">#D7353434</color>
+    <color name="grey">#879BAB</color>
+    <color name="mid_grey">#40808080</color>
+    <color name="reviewColor">#2eaa00</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <item name="item_id" type="id"/>
+    <string name="_5_0">5.0</string>
+    <string msgid="7903180715631665059" name="abc_action_bar_home_description">"التوجه إلى المنزل"</string>
+    <string msgid="6794660482873516081" name="abc_action_bar_up_description">"التنقل إلى أعلى"</string>
+    <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"خيارات أكثر"</string>
+    <string msgid="2571498368472823490" name="abc_action_mode_done">"تم"</string>
+    <string msgid="3732416590524162402" name="abc_activity_chooser_view_see_all">"عرض الكل"</string>
+    <string msgid="1798588241954930982" name="abc_activitychooserview_choose_application">"اختيار تطبيق"</string>
+    <string msgid="3403923230105792483" name="abc_capital_off">"إيقاف"</string>
+    <string msgid="7831734969929204599" name="abc_capital_on">"تفعيل"</string>
+    <string msgid="5725160506500770567" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="944415252197684443" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="129742188101734366" name="abc_menu_delete_shortcut_label">"حذف"</string>
+    <string msgid="6840127756824236027" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="4974283687810130415" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="8046416353848716905" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="3271697756921353410" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="2304645930658438191" name="abc_menu_space_shortcut_label">"فضاء"</string>
+    <string msgid="8327365089695024394" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="3570106412128999382" name="abc_prepend_shortcut_label">"القائمة+"</string>
+    <string msgid="940844115270746197" name="abc_search_hint">"بحث…"</string>
+    <string msgid="1769270744562318534" name="abc_searchview_description_clear">"محو طلب البحث"</string>
+    <string msgid="908784302972860853" name="abc_searchview_description_query">"طلب بحث"</string>
+    <string msgid="5466662225065974044" name="abc_searchview_description_search">"البحث"</string>
+    <string msgid="8203855622131699655" name="abc_searchview_description_submit">"إرسال طلب البحث"</string>
+    <string msgid="3478748990613108725" name="abc_searchview_description_voice">"بحث صوتي"</string>
+    <string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"مشاركة مع"</string>
+    <string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"مشاركة مع <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"تصغير"</string>
+    <string name="aboutus">معلومات عنا</string>
+    <string name="ac_installation_remove">AC Installation/ Remove</string>
+    <string name="ac_services">خدمات AC</string>
+    <string name="already_have_an_account">هل لديك حساب</string>
+    <string name="app_name">إصلاح التيار المتردد</string>
+    <string name="appsharing">App Sharing</string>
+    <string name="arabic">عربى</string>
+    <string name="arabicinenglish">Arabic</string>
+    <string name="athome">at Home</string>
+    <string name="cancellationpolicy">Cancellation Policy</string>
+    <string name="change_language">Change Language / غير اللغة</string>
+    <string name="confirmpassword">تأكيد كلمة المرور</string>
+    <string name="contactus">اتصل بنا</string>
+    <string name="continues">Continue / استمر</string>
+    <string name="demo_name">Demo Name</string>
+    <string name="didn_t_receive_the_otp">OTP نہیں ملا؟</string>
+    <string name="don_t_have_an_account">ليس لديك حساب</string>
+    <string name="edit_profile">تعديل الملف الشخصي</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="english">English</string>
+    <string name="enter_otp">OTP درج کریں</string>
+    <string name="faq">FAQ</string>
+    <string name="feedback">ردود الفعل</string>
+    <string name="firstname">الاسم الاول</string>
+    <string name="forgot_password">هل نسيت كلمة المرور؟</string>
+    <string name="great_service_very_polite">Great service, very polite.</string>
+    <string name="lastname">الكنية</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="logout">تسجيل خروج</string>
+    <string name="north_udaipur_20th_december_2019">North Udaipur, 20th December 2019</string>
+    <string name="orconnectwith">أو التواصل مع</string>
+    <string name="our_services">خدماتنا</string>
+    <string name="password">كلمه السر</string>
+    <string name="phonenumber">رقم الهاتف</string>
+    <string name="price">\@ Rs 199/-</string>
+    <string name="privacyandpolicy">Privacy &amp; Policy</string>
+    <string name="rateus">قيمنا</string>
+    <string name="resend_code">کوڈ پھر سے بھیجو</string>
+    <string name="review_title">ماذا يقول عملائنا</string>
+    <string msgid="730395136688082741" name="search_menu_title">"البحث"</string>
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="sign_up">سجل</string>
+    <string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="submit">جمع</string>
+    <string name="termsandcondition">Terms &amp; Condition</string>
+    <string name="we_have_sent_you_access_code_via_sms_for_mobile_number_verification">
+        لقد أرسلنا لك رمز الوصول عبر الرسائل القصيرة للتحقق من رقم الجوال</string>
+    <string name="your_location">Your Location</string>
+</resources>

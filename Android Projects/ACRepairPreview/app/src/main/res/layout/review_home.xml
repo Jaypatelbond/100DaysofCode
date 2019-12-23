@@ -2,12 +2,13 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="110dp"
-        android:layout_margin="10dp"
+        android:layout_margin="5dp"
         app:cardCornerRadius="8dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -41,6 +42,7 @@
                 app:layout_constraintVertical_bias="0.3" />
 
             <TextView
+                android:id="@+id/textViewRating"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/imageViewProfile"
@@ -56,7 +58,7 @@
                 app:layout_constraintVertical_bias="0.19" />
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/textViewName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_medium"
@@ -70,7 +72,7 @@
                 app:layout_constraintVertical_bias="0.18" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/textViewAddress"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/north_udaipur_20th_december_2019"
@@ -78,11 +80,12 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/textView"
-                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintStart_toStartOf="@+id/textViewName"
+                app:layout_constraintTop_toBottomOf="@+id/textViewName"
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
+                android:id="@+id/textViewReview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
@@ -91,9 +94,9 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/textView4"
-                app:layout_constraintTop_toBottomOf="@+id/textView4"
-                app:layout_constraintVertical_bias="0.110000014" />
+                app:layout_constraintStart_toStartOf="@+id/textViewAddress"
+                app:layout_constraintTop_toBottomOf="@+id/textViewAddress"
+                app:layout_constraintVertical_bias="0.11" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 

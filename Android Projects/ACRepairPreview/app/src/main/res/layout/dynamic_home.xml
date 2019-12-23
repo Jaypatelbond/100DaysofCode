@@ -4,6 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginTop="5dp"
     android:orientation="vertical">
 
     <RelativeLayout
@@ -20,16 +22,19 @@
             android:id="@+id/txtCategoryName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:textDirection="locale"
             android:text="@string/our_services" />
 
     </RelativeLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewDynamic"
+        android:layoutDirection="locale"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
        />
 </LinearLayout>
