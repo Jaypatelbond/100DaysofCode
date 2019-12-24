@@ -71,13 +71,14 @@
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="25dp"
                 android:background="@drawable/line_dashed"
-                android:layerType="software" />
+                android:layerType="software"
+                android:contentDescription="@null" />
         </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/rlLayout2"
             android:layout_width="match_parent"
-            android:layout_height="210dp"
+            android:layout_height="220dp"
             android:layout_marginTop="-70dp"
             android:background="@drawable/cardview_curve_top">
 
@@ -97,7 +98,8 @@
             android:layout_height="match_parent"
             android:layout_marginTop="15dp"
             android:overScrollMode="never"
-            tools:listitem="@layout/dynamic_home"/>
+            tools:listitem="@layout/dynamic_home"
+            tools:targetApi="lollipop" />
 
 
     </LinearLayout>

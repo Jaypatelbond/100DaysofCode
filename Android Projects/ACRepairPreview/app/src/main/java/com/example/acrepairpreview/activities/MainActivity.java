@@ -17,8 +17,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.PagerAdapter;
 
 import com.example.acrepairpreview.R;
-import com.example.acrepairpreview.adapters.HomeListAdapter;
 import com.example.acrepairpreview.adapters.BannerAdapter;
+import com.example.acrepairpreview.adapters.HomeListAdapter;
 import com.example.acrepairpreview.model.Dynamic;
 import com.tmall.ultraviewpager.UltraViewPager;
 

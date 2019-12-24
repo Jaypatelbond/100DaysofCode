@@ -1,6 +1,5 @@
 package com.example.acrepairpreview.adapters;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -125,7 +124,6 @@ public class HomeListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         holder.recyclerViewDynamic.setAdapter(ourServicesAdapter);
     }
 
-    @SuppressLint("SetTextI18n")
     private void initLayoutTopOffers(ViewHolderTopOffers holder, int position) {
         //Initilizing the  BannerAdapter，and adding child view to UltraViewPager
         PagerAdapter pagerAdapter = new TopOfferViewPagerAdapter(true);
@@ -134,7 +132,7 @@ public class HomeListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         holder.ultraViewPagerTopOffer.setScrollMode(UltraViewPager.ScrollMode.HORIZONTAL);
         //Setting the multiscreen images.
         holder.ultraViewPagerTopOffer.setMultiScreen(0.9f);
-        holder.txtCategoryName.setText("Top Offers");
+        holder.txtCategoryName.setText(R.string.top_offer);
     }
 
     private void initLayoutCustomerReviews(ViewHolderCustomerReviews holder, int position) {

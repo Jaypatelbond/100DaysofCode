@@ -84,6 +84,7 @@
     <string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string>
     <string name="submit">جمع</string>
     <string name="termsandcondition">Terms &amp; Condition</string>
+    <string name="top_offer">العرض العلوي</string>
     <string name="we_have_sent_you_access_code_via_sms_for_mobile_number_verification">
         لقد أرسلنا لك رمز الوصول عبر الرسائل القصيرة للتحقق من رقم الجوال</string>
     <string name="your_location">Your Location</string>
