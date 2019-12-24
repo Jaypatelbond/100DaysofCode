@@ -376,7 +376,6 @@ attr labelVisibilityMode
 attr lastBaselineToBottomHeight
 attr layout
 attr layoutDescription
-attr layoutDuringTransition
 attr layoutManager
 attr layout_anchor
 attr layout_anchorGravity
@@ -1449,13 +1448,11 @@ id guideline7
 id guideline9
 id home
 id homeAsUp
-id honorRequest
 id horizontal
 id icon
 id icon_group
 id ifRoom
 id ignore
-id ignoreRequest
 id image
 id imageBackButton
 id imageView
@@ -2453,7 +2450,7 @@ styleable MockView mock_diagonalsColor mock_label mock_labelBackgroundColor mock
 styleable Motion animate_relativeTo drawPath motionPathRotate motionStagger pathMotionArc transitionEasing
 styleable MotionHelper onHide onShow
 styleable MotionLayout applyMotionScene currentState layoutDescription motionDebug motionProgress showPaths
-styleable MotionScene defaultDuration layoutDuringTransition
+styleable MotionScene defaultDuration
 styleable MotionTelltales telltales_tailColor telltales_tailScale telltales_velocityMode
 styleable NavigationView android_background android_fitsSystemWindows android_maxWidth elevation headerLayout itemBackground itemHorizontalPadding itemIconPadding itemIconTint itemTextAppearance itemTextColor menu
 styleable OnClick clickAction targetId
@@ -2481,7 +2478,7 @@ styleable TextInputLayout android_textColorHint android_hint boxBackgroundColor 
 styleable ThemeEnforcement android_textAppearance enforceMaterialTheme enforceTextAppearance
 styleable Toolbar android_gravity android_minHeight buttonGravity collapseContentDescription collapseIcon contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation logo logoDescription maxButtonHeight menu navigationContentDescription navigationIcon popupTheme subtitle subtitleTextAppearance subtitleTextColor title titleMargin titleMarginBottom titleMarginEnd titleMarginStart titleMarginTop titleMargins titleTextAppearance titleTextColor
 styleable Transform android_transformPivotX android_transformPivotY android_translationX android_translationY android_scaleX android_scaleY android_rotation android_rotationX android_rotationY android_translationZ android_elevation pivotAnchor pivotX pivotY
-styleable Transition android_id autoTransition constraintSetEnd constraintSetStart duration layoutDuringTransition motionInterpolator pathMotionArc staggered transitionDisable
+styleable Transition android_id autoTransition constraintSetEnd constraintSetStart duration motionInterpolator staggered transitionDisable
 styleable UltraViewPager upv_automeasure upv_autoscroll upv_disablescroll upv_infiniteloop upv_itemratio upv_multiscreen upv_ratio upv_scrollmode
 styleable Variant constraints region_heightLessThan region_heightMoreThan region_widthLessThan region_widthMoreThan
 styleable View android_theme android_focusable paddingEnd paddingStart theme
