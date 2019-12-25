@@ -20,7 +20,6 @@ import butterknife.OnClick;
  */
 
 public class OTPActivity extends BaseActivity implements TextWatcher {
-
     @BindView(R.id.imageView)
     ImageView imageView;
     @BindView(R.id.toolbar)
@@ -81,7 +80,6 @@ public class OTPActivity extends BaseActivity implements TextWatcher {
             if (edittextField1.length() == 1) {
                 edittextField2.requestFocus();
             }
-
             if (edittextField2.length() == 1) {
                 edittextField3.requestFocus();
             }

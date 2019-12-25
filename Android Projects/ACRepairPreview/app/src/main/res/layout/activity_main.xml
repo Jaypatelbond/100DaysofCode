@@ -5,8 +5,8 @@
     android:id="@+id/clActivityMain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    android:background="@color/background">
+    android:background="@color/background"
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -71,8 +71,8 @@
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="25dp"
                 android:background="@drawable/line_dashed"
-                android:layerType="software"
-                android:contentDescription="@null" />
+                android:contentDescription="@null"
+                android:layerType="software" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -87,16 +87,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_centerInParent="true"
-                android:overScrollMode="never" />
-
+                android:overScrollMode="never"
+                android:scrollIndicators="bottom"/>
+            
         </RelativeLayout>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewHome"
-            android:nestedScrollingEnabled="false"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="15dp"
+            android:nestedScrollingEnabled="false"
             android:overScrollMode="never"
             tools:listitem="@layout/dynamic_home"
             tools:targetApi="lollipop" />

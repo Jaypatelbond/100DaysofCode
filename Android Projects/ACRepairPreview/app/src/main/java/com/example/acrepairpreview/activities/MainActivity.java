@@ -72,12 +72,11 @@ public class MainActivity extends BaseActivity {
         //Initilizing the  BannerAdapter，and adding child view to UltraViewPager
         PagerAdapter pagerAdapter = new BannerAdapter(true);
         viewPager.setAdapter(pagerAdapter);
-        viewPager.setOffscreenPageLimit(3);
+        viewPager.setOffscreenPageLimit(1);
         //Setting the multiscreen images.
         viewPager.setMultiScreen(0.8f);
-        //viewPager.setItemRatio(1.0f);
-        //viewPager.setAutoMeasureHeight(true);
-
+        viewPager.setItemRatio(2.0f);
+        viewPager.setAutoMeasureHeight(true);
         //initialize built-in indicator
         viewPager.initIndicator();
         //Set style of indicators
@@ -86,12 +85,11 @@ public class MainActivity extends BaseActivity {
                 .setFocusColor(Color.GRAY)
                 .setNormalColor(Color.BLACK)
                 .setRadius((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 5, getResources().getDisplayMetrics()));
-        //Setting the Alignment in the Bottom of the ViewPager(
+//        //Setting the Alignment in the Bottom of the ViewPager(
         viewPager.getIndicator().setGravity(Gravity.CENTER_HORIZONTAL | Gravity.BOTTOM);
-        //Setting the Margin (Top)
-        viewPager.getIndicator().setMargin(0, 45, 0, 0);
-        //Construct built-in indicator, and add it to  UltraViewPager
+//        //Construct built-in indicator, and add it to  UltraViewPager
         viewPager.getIndicator().build();
+
 
         //Set an Infinite loop
         viewPager.setInfiniteLoop(true);
