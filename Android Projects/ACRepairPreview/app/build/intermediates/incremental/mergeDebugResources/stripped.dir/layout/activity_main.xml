@@ -78,7 +78,7 @@
         <RelativeLayout
             android:id="@+id/rlLayout2"
             android:layout_width="match_parent"
-            android:layout_height="220dp"
+            android:layout_height="250dp"
             android:layout_marginTop="-70dp"
             android:background="@drawable/cardview_curve_top">
 
@@ -88,13 +88,7 @@
                 android:layout_height="150dp"
                 android:layout_centerInParent="true"
                 android:overScrollMode="never"
-                android:scrollIndicators="bottom"/>
-
-<!--            <com.tmall.ultraviewpager.UltraViewPagerIndicator-->
-<!--                android:id="@+id/viewPager_Indicator"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_below="@id/viewPager" />-->
+                />
 
         </RelativeLayout>
 
