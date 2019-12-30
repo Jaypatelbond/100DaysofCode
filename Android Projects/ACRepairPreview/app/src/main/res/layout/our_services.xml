@@ -18,8 +18,7 @@
             android:layout_height="50dp"
             android:layout_gravity="center|center_horizontal"
             android:layout_margin="10dp"
-            app:cardBackgroundColor="@color/black"
-            app:cardElevation="7dp">
+            app:cardBackgroundColor="@color/black">
 
             <ImageView
                 android:id="@+id/imageViewOurServices"
