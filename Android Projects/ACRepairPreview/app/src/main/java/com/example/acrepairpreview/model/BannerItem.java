@@ -4,11 +4,11 @@ package com.example.acrepairpreview.model;
  * @author Jaypatelbond
  */
 
-public class CardItem {
+public class BannerItem {
 
     private int mImageResource;
 
-    public CardItem(int image) {
+    public BannerItem(int image) {
         mImageResource = image;
     }
 

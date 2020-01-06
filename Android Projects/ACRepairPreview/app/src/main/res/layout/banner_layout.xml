@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.makeramen.roundedimageview.RoundedImageView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="6dp">
-
-        <ImageView
-            android:id="@+id/image_banner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/banner_1"
-            android:scaleType="fitXY"
-            android:contentDescription="@null" />
-    </androidx.cardview.widget.CardView>
-</RelativeLayout>
+    android:id="@+id/banner_image"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_height="match_parent"
+    xmlms:riv_corner_radius="12dp"
+    android:scaleType="fitXY"
+    xmlns:xmlms="http://schemas.android.com/apk/res-auto">
+</com.makeramen.roundedimageview.RoundedImageView>

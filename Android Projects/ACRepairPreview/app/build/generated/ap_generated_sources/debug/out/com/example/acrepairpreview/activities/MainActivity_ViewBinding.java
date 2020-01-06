@@ -10,10 +10,11 @@ import androidx.annotation.UiThread;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.widget.NestedScrollView;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager2.widget.ViewPager2;
 import butterknife.Unbinder;
 import butterknife.internal.Utils;
 import com.example.acrepairpreview.R;
-import com.tmall.ultraviewpager.UltraViewPager;
+import com.example.acrepairpreview.utils.InkPageIndicator;
 import java.lang.IllegalStateException;
 import java.lang.Override;
 
@@ -33,10 +34,11 @@ public class MainActivity_ViewBinding implements Unbinder {
     target.imageViewNotification = Utils.findRequiredViewAsType(source, R.id.imageViewNotification, "field 'imageViewNotification'", ImageView.class);
     target.textViewLocation = Utils.findRequiredViewAsType(source, R.id.textViewLocation, "field 'textViewLocation'", TextView.class);
     target.rlLayout1 = Utils.findRequiredViewAsType(source, R.id.rlLayout1, "field 'rlLayout1'", RelativeLayout.class);
-    target.viewPager = Utils.findRequiredViewAsType(source, R.id.viewPager, "field 'viewPager'", UltraViewPager.class);
+    target.viewPager = Utils.findRequiredViewAsType(source, R.id.viewPager, "field 'viewPager'", ViewPager2.class);
     target.rlLayout2 = Utils.findRequiredViewAsType(source, R.id.rlLayout2, "field 'rlLayout2'", RelativeLayout.class);
     target.recyclerViewHome = Utils.findRequiredViewAsType(source, R.id.recyclerViewHome, "field 'recyclerViewHome'", RecyclerView.class);
     target.clActivityMain = Utils.findRequiredViewAsType(source, R.id.clActivityMain, "field 'clActivityMain'", NestedScrollView.class);
+    target.indicator = Utils.findRequiredViewAsType(source, R.id.indicator, "field 'indicator'", InkPageIndicator.class);
   }
 
   @Override
@@ -54,5 +56,6 @@ public class MainActivity_ViewBinding implements Unbinder {
     target.rlLayout2 = null;
     target.recyclerViewHome = null;
     target.clActivityMain = null;
+    target.indicator = null;
   }
 }

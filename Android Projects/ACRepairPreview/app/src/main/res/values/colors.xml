@@ -12,5 +12,7 @@
     <color name="black">#000000</color>
     <color name="mid_grey">#40808080</color>
     <color name="reviewColor">#2eaa00</color>
+    <color name="page_indicators">#80333333</color>
+    <color name="page_indicator_selected">#ff333333</color>
 
 </resources>

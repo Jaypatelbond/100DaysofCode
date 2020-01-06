@@ -1,10 +1,8 @@
 package com.example.acrepairpreview.activities;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.util.TypedValue;
-import android.view.Gravity;
+import android.os.Handler;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -14,13 +12,17 @@ import androidx.core.widget.NestedScrollView;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.acrepairpreview.R;
 import com.example.acrepairpreview.adapters.BannerAdapter;
 import com.example.acrepairpreview.adapters.HomeListAdapter;
+import com.example.acrepairpreview.model.BannerItem;
 import com.example.acrepairpreview.model.Dynamic;
-import com.tmall.ultraviewpager.UltraViewPager;
+import com.example.acrepairpreview.utils.InkPageIndicator;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -42,7 +44,7 @@ public class MainActivity extends BaseActivity {
     @BindView(R.id.rlLayout1)
     RelativeLayout rlLayout1;
     @BindView(R.id.viewPager)
-    UltraViewPager viewPager;
+    ViewPager2 viewPager;
     @BindView(R.id.rlLayout2)
     RelativeLayout rlLayout2;
     @BindView(R.id.recyclerViewHome)
@@ -50,6 +52,10 @@ public class MainActivity extends BaseActivity {
     @BindView(R.id.clActivityMain)
     NestedScrollView clActivityMain;
     Dynamic dynamic = new Dynamic();
+    List<BannerItem> bannerItems;
+    @BindView(R.id.indicator)
+    InkPageIndicator indicator;
+    private Handler sliderHandler = new Handler();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -68,34 +74,65 @@ public class MainActivity extends BaseActivity {
     }
 
     public void initBannerViewPager() {
-        viewPager.setScrollMode(UltraViewPager.ScrollMode.HORIZONTAL);
-        //Initilizing the  BannerAdapter，and adding child view to UltraViewPager
-        PagerAdapter pagerAdapter = new BannerAdapter(true);
-        viewPager.setAdapter(pagerAdapter);
+        List<BannerItem> bannerItems = new ArrayList<>();
+        bannerItems.add(new BannerItem(R.drawable.banner_1));
+        bannerItems.add(new BannerItem(R.drawable.banner_2));
+        bannerItems.add(new BannerItem(R.drawable.banner_3));
+        bannerItems.add(new BannerItem(R.drawable.banner_2));
+        bannerItems.add(new BannerItem(R.drawable.banner_3));
+        viewPager.setAdapter(new BannerAdapter(bannerItems, viewPager));
+        viewPager.setOrientation(ViewPager2.ORIENTATION_HORIZONTAL);
+        viewPager.setClipToPadding(false);
+        viewPager.setClipChildren(false);
         viewPager.setOffscreenPageLimit(1);
-        //Setting the multiscreen images.
-        viewPager.setMultiScreen(0.8f);
-        viewPager.setItemRatio(2.0f);
-        viewPager.setAutoMeasureHeight(true);
-        //initialize built-in indicator
-        viewPager.initIndicator();
-        //Set style of indicators
-        viewPager.getIndicator()
-                .setOrientation(UltraViewPager.Orientation.HORIZONTAL)
-                .setFocusColor(Color.GRAY)
-                .setNormalColor(Color.BLACK)
-                .setRadius((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 5, getResources().getDisplayMetrics()));
-//        //Setting the Alignment in the Bottom of the ViewPager(
-        viewPager.getIndicator().setGravity(Gravity.CENTER_HORIZONTAL | Gravity.BOTTOM);
-//        //Construct built-in indicator, and add it to  UltraViewPager
-        viewPager.getIndicator().build();
+        indicator.setViewPager(viewPager);
+//        viewPager.getChildAt(0).setOverScrollMode(RecyclerView.OVER_SCROLL_NEVER);
 
+        float pageMargin = getResources().getDimensionPixelOffset(R.dimen.pageMargin);
+        float pageOffset = getResources().getDimensionPixelOffset(R.dimen.offset);
 
-        //Set an Infinite loop
-        viewPager.setInfiniteLoop(true);
-        //Enable auto-scroll mode
-        viewPager.setAutoScroll(3000);
+        viewPager.setPageTransformer((page, position) -> {
+            float myOffset = position * -(2 * pageOffset + pageMargin);
+            if (position < -1) {
+                page.setTranslationX(-myOffset);
+            } else if (position <= 1) {
+                float scaleFactor = Math.max(0.7f, 1 - Math.abs(position - 0.14285715f));
+                page.setTranslationX(myOffset);
+                page.setScaleY(scaleFactor);
+                page.setAlpha(scaleFactor);
+            } else {
+                page.setAlpha(0);
+                page.setTranslationX(myOffset);
+            }
+        });
+
+        viewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+            @Override
+            public void onPageSelected(int position) {
+                super.onPageSelected(position);
+                sliderHandler.removeCallbacks(sliderRunnable);
+                sliderHandler.postDelayed(sliderRunnable, 3000);
+            }
+        });
+
     }
 
+    private Runnable sliderRunnable = new Runnable() {
+        @Override
+        public void run() {
+            viewPager.setCurrentItem(viewPager.getCurrentItem() + 1);
+        }
+    };
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        sliderHandler.removeCallbacks(sliderRunnable);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        sliderHandler.postDelayed(sliderRunnable, 3000);
+    }
 }

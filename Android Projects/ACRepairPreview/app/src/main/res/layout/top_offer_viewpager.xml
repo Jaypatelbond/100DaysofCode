@@ -29,7 +29,7 @@
 
     </RelativeLayout>
 
-    <com.tmall.ultraviewpager.UltraViewPager
+    <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPagerTopOffer"
         android:layout_width="match_parent"
         android:layout_height="200dp"

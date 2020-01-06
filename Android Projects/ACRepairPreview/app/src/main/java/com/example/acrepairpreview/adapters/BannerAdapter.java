@@ -3,70 +3,64 @@ package com.example.acrepairpreview.adapters;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.RelativeLayout;
 
 import androidx.annotation.NonNull;
-import androidx.viewpager.widget.PagerAdapter;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.acrepairpreview.R;
+import com.example.acrepairpreview.model.BannerItem;
+import com.makeramen.roundedimageview.RoundedImageView;
 
-import org.jetbrains.annotations.NotNull;
+import java.util.List;
 
-public class BannerAdapter extends PagerAdapter {
-    private boolean isMultiScr;
+public class BannerAdapter extends RecyclerView.Adapter<BannerAdapter.BannerViewHolder>{
+   private List<BannerItem> bannerItems;
+   private ViewPager2 viewPager2;
 
-    public BannerAdapter(boolean isMultiScr) {
-        this.isMultiScr = isMultiScr;
+    public BannerAdapter(List<BannerItem> bannerItems, ViewPager2 viewPager2) {
+        this.viewPager2 = viewPager2;
+        this.bannerItems = bannerItems;
     }
 
-    @Override
-    public int getCount() {
-        return 5;
-    }
-
-    @Override
-    public boolean isViewFromObject(@NotNull View view, @NotNull Object object) {
-        return view == object;
-    }
 
     @NonNull
     @Override
-    public Object instantiateItem(ViewGroup container, int position){
-        View view = LayoutInflater.from(container.getContext()).inflate(R.layout.banner_layout, null);
-        //new LinearLayout(container.getContext());
-        ImageView image_banner = (ImageView) view.findViewById(R.id.image_banner);
-
-
-        view.setId(R.id.item_id);
-        switch (position) {
-            case 0:
-                image_banner.setImageResource(R.drawable.banner_1);
-                break;
-            case 1:
-                image_banner.setImageResource(R.drawable.banner_2);
-                break;
-            case 2:
-                image_banner.setImageResource(R.drawable.banner_3);
-                break;
-            case 3:
-                image_banner.setImageResource(R.drawable.banner_2);
-                break;
-            case 4:
-                image_banner.setImageResource(R.drawable.banner_3);
-                break;
-        }
-        container.addView(view);
-//        linearLayout.getLayoutParams().width = (int)
-//        TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 180, container.getContext().getResources().getDisplayMetrics());
-//        linearLayout.getLayoutParams().height =
-//        (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 400, container.getContext().getResources().getDisplayMetrics());
-        return view;
+    public BannerAdapter.BannerViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        return new BannerViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.banner_layout,parent,false));
     }
 
     @Override
-    public void destroyItem(ViewGroup container, int position, Object object) {
-        RelativeLayout view = (RelativeLayout) object;
-        container.removeView(view);
+    public void onBindViewHolder(@NonNull BannerAdapter.BannerViewHolder holder, int position) {
+       holder.setRoundedImageView(bannerItems.get(position));
+       if(position == bannerItems.size() - 2){
+           viewPager2.post(runnable);
+       }
     }
+
+    @Override
+    public int getItemCount() {
+        return 5;
+    }
+
+    public class BannerViewHolder extends RecyclerView.ViewHolder {
+        private RoundedImageView roundedImageView;
+
+        public BannerViewHolder(@NonNull View itemView) {
+            super(itemView);
+            roundedImageView = itemView.findViewById(R.id.banner_image);
+        }
+
+        void setRoundedImageView(BannerItem bannerItem){
+            roundedImageView.setImageResource(bannerItem.getImages());
+        }
+    }
+
+    private  Runnable runnable = new Runnable() {
+        @Override
+        public void run() {
+            bannerItems.addAll(bannerItems);
+            notifyDataSetChanged();
+        }
+    };
 }

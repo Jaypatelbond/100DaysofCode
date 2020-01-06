@@ -82,6 +82,7 @@ attr alpha
 attr alphabeticModifiers
 attr altSrc
 attr animate_relativeTo
+attr animationDuration
 attr applyMotionScene
 attr arcMode
 attr arrowHeadLength
@@ -225,6 +226,7 @@ attr counterMaxLength
 attr counterOverflowTextAppearance
 attr counterTextAppearance
 attr crossfade
+attr currentPageIndicatorColor
 attr currentState
 attr curveFit
 attr customBoolean
@@ -250,6 +252,8 @@ attr divider
 attr dividerHorizontal
 attr dividerPadding
 attr dividerVertical
+attr dotDiameter
+attr dotGap
 attr dragDirection
 attr dragScale
 attr drawPath
@@ -505,6 +509,7 @@ attr paddingEnd
 attr paddingStart
 attr paddingTopNoTitle
 attr pageCount
+attr pageIndicatorColor
 attr panelBackground
 attr panelMenuListTheme
 attr panelMenuListWidth
@@ -545,6 +550,18 @@ attr region_widthLessThan
 attr region_widthMoreThan
 attr reverseLayout
 attr rippleColor
+attr riv_border_color
+attr riv_border_width
+attr riv_corner_radius
+attr riv_corner_radius_bottom_left
+attr riv_corner_radius_bottom_right
+attr riv_corner_radius_top_left
+attr riv_corner_radius_top_right
+attr riv_mutate_background
+attr riv_oval
+attr riv_tile_mode
+attr riv_tile_mode_x
+attr riv_tile_mode_y
 attr round
 attr roundPercent
 attr saturation
@@ -698,14 +715,6 @@ attr ttcIndex
 attr underlineColor
 attr underlinePadding
 attr underlineWidth
-attr upv_automeasure
-attr upv_autoscroll
-attr upv_disablescroll
-attr upv_infiniteloop
-attr upv_itemratio
-attr upv_multiscreen
-attr upv_ratio
-attr upv_scrollmode
 attr useCompatPadding
 attr viewInflaterClass
 attr visibilityMode
@@ -844,7 +853,8 @@ color mtrl_textinput_filled_box_default_background_color
 color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
-color notification_material_background_media_default_color
+color page_indicator_selected
+color page_indicators
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -1080,10 +1090,8 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
-dimen subtitle_corner_radius
-dimen subtitle_outline_width
-dimen subtitle_shadow_offset
-dimen subtitle_shadow_radius
+dimen offset
+dimen pageMargin
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
 dimen tooltip_margin
@@ -1296,7 +1304,6 @@ id accessibility_custom_action_6
 id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
-id action0
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -1329,7 +1336,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
-id backward
+id banner_image
 id barrier
 id baseline
 id beginning
@@ -1341,8 +1348,6 @@ id buttonPanel
 id buttonSignIn
 id buttonSignUp
 id buttonSubmit
-id cancel_action
-id cardView
 id cardViewFacebook
 id cardViewGoogle
 id cardViewTopOffers
@@ -1359,6 +1364,7 @@ id clActivityMain
 id clChangeLanguage
 id clSignUp
 id clWelcome
+id clamp
 id clip_horizontal
 id clip_vertical
 id collapseActionView
@@ -1403,7 +1409,6 @@ id edittextField2
 id edittextField3
 id edittextField4
 id end
-id end_padder
 id enterAlways
 id enterAlwaysCollapsed
 id exitUntilCollapsed
@@ -1427,7 +1432,6 @@ id flRateUs
 id flTermsandCondition
 id flip
 id forever
-id forward
 id ghost_view
 id glide_custom_view_target_tag
 id gone
@@ -1448,7 +1452,6 @@ id guideline7
 id guideline9
 id home
 id homeAsUp
-id horizontal
 id icon
 id icon_group
 id ifRoom
@@ -1463,8 +1466,8 @@ id imageViewCheckboxEnglish
 id imageViewNotification
 id imageViewOurServices
 id imageViewProfile
-id image_banner
 id image_banner_top_offers
+id indicator
 id info
 id invisible
 id italic
@@ -1483,10 +1486,10 @@ id listMode
 id list_item
 id llServices
 id masked
-id media_actions
 id message
 id middle
 id mini
+id mirror
 id motion_base
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
@@ -1522,6 +1525,7 @@ id ratio
 id rectangles
 id recyclerViewDynamic
 id recyclerViewHome
+id repeat
 id reverseSawtooth
 id reviewStar
 id right
@@ -1576,7 +1580,6 @@ id startHorizontal
 id startVertical
 id staticLayout
 id staticPostLayout
-id status_bar_latest_event_content
 id stop
 id stretch
 id submenuarrow
@@ -1652,13 +1655,11 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id txtCategoryName
-id ultraviewpager_page_container
 id unchecked
 id uniform
 id unlabeled
 id up
 id useLogo
-id vertical
 id view
 id view2
 id view3
@@ -1754,17 +1755,8 @@ layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action
 layout notification_action_tombstone
-layout notification_media_action
-layout notification_media_cancel_action
-layout notification_template_big_media
-layout notification_template_big_media_custom
-layout notification_template_big_media_narrow
-layout notification_template_big_media_narrow_custom
 layout notification_template_custom_big
 layout notification_template_icon_group
-layout notification_template_lines_media
-layout notification_template_media
-layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout our_services
@@ -1823,6 +1815,7 @@ string character_counter_pattern
 string confirmpassword
 string contactus
 string continues
+string define_roundedimageview
 string demo_name
 string didn_t_receive_the_otp
 string don_t_have_an_account
@@ -1839,6 +1832,15 @@ string forgot_password
 string great_service_very_polite
 string hide_bottom_view_on_scroll_behavior
 string lastname
+string library_roundedimageview_author
+string library_roundedimageview_authorWebsite
+string library_roundedimageview_isOpenSource
+string library_roundedimageview_libraryDescription
+string library_roundedimageview_libraryName
+string library_roundedimageview_libraryVersion
+string library_roundedimageview_libraryWebsite
+string library_roundedimageview_licenseId
+string library_roundedimageview_repositoryLink
 string login
 string logout
 string mtrl_chip_close_icon_content_description
@@ -2146,14 +2148,9 @@ style TextAppearance_AppCompat_Widget_Switch
 style TextAppearance_AppCompat_Widget_TextView_SpinnerItem
 style TextAppearance_Compat_Notification
 style TextAppearance_Compat_Notification_Info
-style TextAppearance_Compat_Notification_Info_Media
 style TextAppearance_Compat_Notification_Line2
-style TextAppearance_Compat_Notification_Line2_Media
-style TextAppearance_Compat_Notification_Media
 style TextAppearance_Compat_Notification_Time
-style TextAppearance_Compat_Notification_Time_Media
 style TextAppearance_Compat_Notification_Title
-style TextAppearance_Compat_Notification_Title_Media
 style TextAppearance_Design_CollapsingToolbar_Expanded
 style TextAppearance_Design_Counter
 style TextAppearance_Design_Counter_Overflow
@@ -2428,6 +2425,7 @@ styleable ForegroundLinearLayout android_foreground android_foregroundGravity fo
 styleable GradientColor android_startColor android_endColor android_type android_centerX android_centerY android_gradientRadius android_tileMode android_centerColor android_startX android_startY android_endX android_endY
 styleable GradientColorItem android_color android_offset
 styleable ImageFilterView altSrc brightness contrast crossfade overlay round roundPercent saturation warmth
+styleable InkPageIndicator animationDuration currentPageIndicatorColor dotDiameter dotGap pageIndicatorColor
 styleable KeyAttribute android_visibility android_alpha android_translationX android_translationY android_scaleX android_scaleY android_rotation android_rotationX android_rotationY android_translationZ android_elevation curveFit framePosition motionProgress motionTarget transitionEasing transitionPathRotate
 styleable KeyCycle android_alpha android_translationX android_translationY android_scaleX android_scaleY android_rotation android_rotationX android_rotationY android_translationZ android_elevation curveFit framePosition motionProgress motionTarget transitionEasing transitionPathRotate waveOffset wavePeriod waveShape waveVariesBy
 styleable KeyFrame
@@ -2460,6 +2458,7 @@ styleable PopupWindowBackgroundState state_above_anchor
 styleable PropertySet android_visibility android_alpha layout_constraintTag motionProgress visibilityMode
 styleable RecycleListView paddingBottomNoButtons paddingTopNoTitle
 styleable RecyclerView android_orientation android_clipToPadding android_descendantFocusability fastScrollEnabled fastScrollHorizontalThumbDrawable fastScrollHorizontalTrackDrawable fastScrollVerticalThumbDrawable fastScrollVerticalTrackDrawable layoutManager reverseLayout spanCount stackFromEnd
+styleable RoundedImageView android_scaleType riv_border_color riv_border_width riv_corner_radius riv_corner_radius_bottom_left riv_corner_radius_bottom_right riv_corner_radius_top_left riv_corner_radius_top_right riv_mutate_background riv_oval riv_tile_mode riv_tile_mode_x riv_tile_mode_y
 styleable ScrimInsetsFrameLayout insetForeground
 styleable ScrollingViewBehavior_Layout behavior_overlapTop
 styleable SearchView android_focusable android_maxWidth android_inputType android_imeOptions closeIcon commitIcon defaultQueryHint goIcon iconifiedByDefault layout queryBackground queryHint searchHintIcon searchIcon submitBackground suggestionRowLayout voiceIcon
@@ -2479,8 +2478,8 @@ styleable ThemeEnforcement android_textAppearance enforceMaterialTheme enforceTe
 styleable Toolbar android_gravity android_minHeight buttonGravity collapseContentDescription collapseIcon contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation logo logoDescription maxButtonHeight menu navigationContentDescription navigationIcon popupTheme subtitle subtitleTextAppearance subtitleTextColor title titleMargin titleMarginBottom titleMarginEnd titleMarginStart titleMarginTop titleMargins titleTextAppearance titleTextColor
 styleable Transform android_transformPivotX android_transformPivotY android_translationX android_translationY android_scaleX android_scaleY android_rotation android_rotationX android_rotationY android_translationZ android_elevation pivotAnchor pivotX pivotY
 styleable Transition android_id autoTransition constraintSetEnd constraintSetStart duration motionInterpolator staggered transitionDisable
-styleable UltraViewPager upv_automeasure upv_autoscroll upv_disablescroll upv_infiniteloop upv_itemratio upv_multiscreen upv_ratio upv_scrollmode
 styleable Variant constraints region_heightLessThan region_heightMoreThan region_widthLessThan region_widthMoreThan
 styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
+styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
