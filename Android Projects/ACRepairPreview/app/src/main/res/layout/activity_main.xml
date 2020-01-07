@@ -91,18 +91,18 @@
                 android:overScrollMode="never"
                 />
 
-            <com.example.acrepairpreview.utils.InkPageIndicator
+            <me.relex.circleindicator.CircleIndicator3
                 android:id="@+id/indicator"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
                 android:layout_below="@+id/viewPager"
                 android:layout_centerInParent="true"
-                android:layoutDirection="locale"
-                android:textDirection="locale"
                 android:layout_gravity="bottom|center_horizontal"
-                android:layout_marginTop="16dp"
-                app:currentPageIndicatorColor="@color/page_indicator_selected"
-                app:pageIndicatorColor="@color/page_indicators" />
+                android:layout_marginTop="8dp"
+                android:layoutDirection="locale"
+                app:ci_drawable="@drawable/page_indicator_selector"
+                app:ci_drawable_unselected="@drawable/page_indicators"
+                />
 
         </RelativeLayout>
 

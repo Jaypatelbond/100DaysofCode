@@ -19,13 +19,13 @@ import java.lang.Override;
 public class ChangeLanguageActivity_ViewBinding implements Unbinder {
   private ChangeLanguageActivity target;
 
-  private View view7f0900c8;
+  private View view7f0900c9;
 
-  private View view7f090160;
+  private View view7f09015f;
+
+  private View view7f090157;
 
   private View view7f090158;
-
-  private View view7f090159;
 
   private View view7f090053;
 
@@ -44,7 +44,7 @@ public class ChangeLanguageActivity_ViewBinding implements Unbinder {
     target.view = Utils.findRequiredView(source, R.id.view, "field 'view'");
     view = Utils.findRequiredView(source, R.id.imageViewBackButton, "field 'imageViewBackButton' and method 'onViewClicked'");
     target.imageViewBackButton = Utils.castView(view, R.id.imageViewBackButton, "field 'imageViewBackButton'", ImageView.class);
-    view7f0900c8 = view;
+    view7f0900c9 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -54,7 +54,7 @@ public class ChangeLanguageActivity_ViewBinding implements Unbinder {
     target.textViewTitle = Utils.findRequiredViewAsType(source, R.id.textViewTitle, "field 'textViewTitle'", TextView.class);
     view = Utils.findRequiredView(source, R.id.textViewEnglish, "field 'textViewEnglish' and method 'onViewClicked'");
     target.textViewEnglish = Utils.castView(view, R.id.textViewEnglish, "field 'textViewEnglish'", TextView.class);
-    view7f090160 = view;
+    view7f09015f = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -63,7 +63,7 @@ public class ChangeLanguageActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.textViewArabic, "field 'textViewArabic' and method 'onViewClicked'");
     target.textViewArabic = Utils.castView(view, R.id.textViewArabic, "field 'textViewArabic'", TextView.class);
-    view7f090158 = view;
+    view7f090157 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -72,7 +72,7 @@ public class ChangeLanguageActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.textViewArabicEnglish, "field 'textViewArabicEnglish' and method 'onViewClicked'");
     target.textViewArabicEnglish = Utils.castView(view, R.id.textViewArabicEnglish, "field 'textViewArabicEnglish'", TextView.class);
-    view7f090159 = view;
+    view7f090158 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -115,14 +115,14 @@ public class ChangeLanguageActivity_ViewBinding implements Unbinder {
     target.buttonChangeLanguage = null;
     target.clChangeLanguage = null;
 
-    view7f0900c8.setOnClickListener(null);
-    view7f0900c8 = null;
-    view7f090160.setOnClickListener(null);
-    view7f090160 = null;
+    view7f0900c9.setOnClickListener(null);
+    view7f0900c9 = null;
+    view7f09015f.setOnClickListener(null);
+    view7f09015f = null;
+    view7f090157.setOnClickListener(null);
+    view7f090157 = null;
     view7f090158.setOnClickListener(null);
     view7f090158 = null;
-    view7f090159.setOnClickListener(null);
-    view7f090159 = null;
     view7f090053.setOnClickListener(null);
     view7f090053 = null;
   }

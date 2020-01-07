@@ -20,9 +20,9 @@ import java.lang.Override;
 public class SignUpActivity_ViewBinding implements Unbinder {
   private SignUpActivity target;
 
-  private View view7f090165;
+  private View view7f090164;
 
-  private View view7f0900c8;
+  private View view7f0900c9;
 
   @UiThread
   public SignUpActivity_ViewBinding(SignUpActivity target) {
@@ -49,7 +49,7 @@ public class SignUpActivity_ViewBinding implements Unbinder {
     target.guideline7 = Utils.findRequiredViewAsType(source, R.id.guideline7, "field 'guideline7'", Guideline.class);
     view = Utils.findRequiredView(source, R.id.textViewLogin, "field 'textViewLogin' and method 'onViewClicked'");
     target.textViewLogin = Utils.castView(view, R.id.textViewLogin, "field 'textViewLogin'", TextView.class);
-    view7f090165 = view;
+    view7f090164 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -59,7 +59,7 @@ public class SignUpActivity_ViewBinding implements Unbinder {
     target.textViewAlreadyHaveAnAccount = Utils.findRequiredViewAsType(source, R.id.textViewAlreadyHaveAnAccount, "field 'textViewAlreadyHaveAnAccount'", TextView.class);
     view = Utils.findRequiredView(source, R.id.imageViewBackButton, "field 'imageView' and method 'onViewClicked'");
     target.imageView = Utils.castView(view, R.id.imageViewBackButton, "field 'imageView'", ImageView.class);
-    view7f0900c8 = view;
+    view7f0900c9 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -94,9 +94,9 @@ public class SignUpActivity_ViewBinding implements Unbinder {
     target.imageView = null;
     target.clSignUp = null;
 
-    view7f090165.setOnClickListener(null);
-    view7f090165 = null;
-    view7f0900c8.setOnClickListener(null);
-    view7f0900c8 = null;
+    view7f090164.setOnClickListener(null);
+    view7f090164 = null;
+    view7f0900c9.setOnClickListener(null);
+    view7f0900c9 = null;
   }
 }

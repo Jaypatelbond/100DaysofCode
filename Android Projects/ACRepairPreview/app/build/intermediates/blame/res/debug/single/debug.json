@@ -4,12 +4,12 @@
         "source": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\build\\intermediates\\res\\merged\\debug\\font_poppins_regular.otf.flat",
-        "source": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\src\\main\\res\\font\\poppins_regular.otf"
-    },
-    {
         "merged": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_otp.xml.flat",
         "source": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\src\\main\\res\\layout\\activity_otp.xml"
+    },
+    {
+        "merged": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\build\\intermediates\\res\\merged\\debug\\font_poppins_regular.otf.flat",
+        "source": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\src\\main\\res\\font\\poppins_regular.otf"
     },
     {
         "merged": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
@@ -28,12 +28,12 @@
         "source": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_curve_black.xml.flat",
-        "source": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\src\\main\\res\\drawable\\button_curve_black.xml"
-    },
-    {
         "merged": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\build\\intermediates\\res\\merged\\debug\\font_poppins_bold.otf.flat",
         "source": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\src\\main\\res\\font\\poppins_bold.otf"
+    },
+    {
+        "merged": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_curve_black.xml.flat",
+        "source": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\src\\main\\res\\drawable\\button_curve_black.xml"
     },
     {
         "merged": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\build\\intermediates\\res\\merged\\debug\\layout_banner_layout.xml.flat",
@@ -74,6 +74,10 @@
     {
         "merged": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\build\\intermediates\\res\\merged\\debug\\drawable_black_rounded_corner.xml.flat",
         "source": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\src\\main\\res\\drawable\\black_rounded_corner.xml"
+    },
+    {
+        "merged": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\build\\intermediates\\res\\merged\\debug\\drawable_page_indicators.xml.flat",
+        "source": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\src\\main\\res\\drawable\\page_indicators.xml"
     },
     {
         "merged": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\build\\intermediates\\res\\merged\\debug\\layout_top_offer_viewpager.xml.flat",
@@ -142,6 +146,10 @@
     {
         "merged": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl_ic_back_button_white.xml.flat",
         "source": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\src\\main\\res\\drawable-ldrtl\\ic_back_button_white.xml"
+    },
+    {
+        "merged": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\build\\intermediates\\res\\merged\\debug\\drawable_page_indicator_selector.xml.flat",
+        "source": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\src\\main\\res\\drawable\\page_indicator_selector.xml"
     },
     {
         "merged": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_forgot_password.xml.flat",

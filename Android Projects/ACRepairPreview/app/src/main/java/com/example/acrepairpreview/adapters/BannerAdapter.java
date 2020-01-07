@@ -3,6 +3,7 @@ package com.example.acrepairpreview.adapters;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -10,7 +11,6 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.acrepairpreview.R;
 import com.example.acrepairpreview.model.BannerItem;
-import com.makeramen.roundedimageview.RoundedImageView;
 
 import java.util.List;
 
@@ -33,8 +33,8 @@ public class BannerAdapter extends RecyclerView.Adapter<BannerAdapter.BannerView
     @Override
     public void onBindViewHolder(@NonNull BannerAdapter.BannerViewHolder holder, int position) {
        holder.setRoundedImageView(bannerItems.get(position));
-       if(position == bannerItems.size() - 2){
-           viewPager2.post(runnable);
+       if(position == bannerItems.size()){
+           notifyDataSetChanged();
        }
     }
 
@@ -43,24 +43,24 @@ public class BannerAdapter extends RecyclerView.Adapter<BannerAdapter.BannerView
         return 5;
     }
 
+    public int getCount(){
+        return Integer.MAX_VALUE;
+    }
+
+    public int getRealCount(){
+        return bannerItems.size();
+    }
+
     public class BannerViewHolder extends RecyclerView.ViewHolder {
-        private RoundedImageView roundedImageView;
+        private ImageView imageView;
 
         public BannerViewHolder(@NonNull View itemView) {
             super(itemView);
-            roundedImageView = itemView.findViewById(R.id.banner_image);
+            imageView = itemView.findViewById(R.id.banner_image);
         }
 
         void setRoundedImageView(BannerItem bannerItem){
-            roundedImageView.setImageResource(bannerItem.getImages());
+            imageView.setImageResource(bannerItem.getImages());
         }
     }
-
-    private  Runnable runnable = new Runnable() {
-        @Override
-        public void run() {
-            bannerItems.addAll(bannerItems);
-            notifyDataSetChanged();
-        }
-    };
 }

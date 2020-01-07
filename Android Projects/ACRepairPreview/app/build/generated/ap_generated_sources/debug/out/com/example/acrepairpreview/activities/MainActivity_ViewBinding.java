@@ -14,9 +14,9 @@ import androidx.viewpager2.widget.ViewPager2;
 import butterknife.Unbinder;
 import butterknife.internal.Utils;
 import com.example.acrepairpreview.R;
-import com.example.acrepairpreview.utils.InkPageIndicator;
 import java.lang.IllegalStateException;
 import java.lang.Override;
+import me.relex.circleindicator.CircleIndicator3;
 
 public class MainActivity_ViewBinding implements Unbinder {
   private MainActivity target;
@@ -38,7 +38,7 @@ public class MainActivity_ViewBinding implements Unbinder {
     target.rlLayout2 = Utils.findRequiredViewAsType(source, R.id.rlLayout2, "field 'rlLayout2'", RelativeLayout.class);
     target.recyclerViewHome = Utils.findRequiredViewAsType(source, R.id.recyclerViewHome, "field 'recyclerViewHome'", RecyclerView.class);
     target.clActivityMain = Utils.findRequiredViewAsType(source, R.id.clActivityMain, "field 'clActivityMain'", NestedScrollView.class);
-    target.indicator = Utils.findRequiredViewAsType(source, R.id.indicator, "field 'indicator'", InkPageIndicator.class);
+    target.indicator = Utils.findRequiredViewAsType(source, R.id.indicator, "field 'indicator'", CircleIndicator3.class);
   }
 
   @Override

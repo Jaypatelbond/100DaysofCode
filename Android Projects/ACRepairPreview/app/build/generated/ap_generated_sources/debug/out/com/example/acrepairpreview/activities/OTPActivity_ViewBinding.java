@@ -20,7 +20,7 @@ import java.lang.Override;
 public class OTPActivity_ViewBinding implements Unbinder {
   private OTPActivity target;
 
-  private View view7f0900c5;
+  private View view7f0900c6;
 
   @UiThread
   public OTPActivity_ViewBinding(OTPActivity target) {
@@ -37,7 +37,7 @@ public class OTPActivity_ViewBinding implements Unbinder {
     target.buttonSubmit = Utils.findRequiredViewAsType(source, R.id.buttonSubmit, "field 'buttonSubmit'", Button.class);
     view = Utils.findRequiredView(source, R.id.imageBackButton, "field 'imageView2' and method 'onViewClicked'");
     target.imageView2 = Utils.castView(view, R.id.imageBackButton, "field 'imageView2'", ImageView.class);
-    view7f0900c5 = view;
+    view7f0900c6 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -78,7 +78,7 @@ public class OTPActivity_ViewBinding implements Unbinder {
     target.textView3 = null;
     target.textViewResendCode = null;
 
-    view7f0900c5.setOnClickListener(null);
-    view7f0900c5 = null;
+    view7f0900c6.setOnClickListener(null);
+    view7f0900c6 = null;
   }
 }

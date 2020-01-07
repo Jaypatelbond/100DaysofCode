@@ -2,7 +2,6 @@ package com.example.acrepairpreview.activities;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.os.Handler;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -19,13 +18,13 @@ import com.example.acrepairpreview.adapters.BannerAdapter;
 import com.example.acrepairpreview.adapters.HomeListAdapter;
 import com.example.acrepairpreview.model.BannerItem;
 import com.example.acrepairpreview.model.Dynamic;
-import com.example.acrepairpreview.utils.InkPageIndicator;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import me.relex.circleindicator.CircleIndicator3;
 
 /**
  * @author Jaypatelbond
@@ -54,8 +53,7 @@ public class MainActivity extends BaseActivity {
     Dynamic dynamic = new Dynamic();
     List<BannerItem> bannerItems;
     @BindView(R.id.indicator)
-    InkPageIndicator indicator;
-    private Handler sliderHandler = new Handler();
+    CircleIndicator3 indicator;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -69,7 +67,6 @@ public class MainActivity extends BaseActivity {
         recyclerViewHome.setLayoutManager(linearLayoutManager);
         recyclerViewHome.setItemAnimator(new DefaultItemAnimator());
         recyclerViewHome.setAdapter(adapter);
-
         initBannerViewPager();
     }
 
@@ -80,17 +77,18 @@ public class MainActivity extends BaseActivity {
         bannerItems.add(new BannerItem(R.drawable.banner_3));
         bannerItems.add(new BannerItem(R.drawable.banner_2));
         bannerItems.add(new BannerItem(R.drawable.banner_3));
+
         viewPager.setAdapter(new BannerAdapter(bannerItems, viewPager));
         viewPager.setOrientation(ViewPager2.ORIENTATION_HORIZONTAL);
         viewPager.setClipToPadding(false);
         viewPager.setClipChildren(false);
         viewPager.setOffscreenPageLimit(1);
+        viewPager.getChildAt(0).setOverScrollMode(RecyclerView.OVER_SCROLL_NEVER);
         indicator.setViewPager(viewPager);
-//        viewPager.getChildAt(0).setOverScrollMode(RecyclerView.OVER_SCROLL_NEVER);
+
 
         float pageMargin = getResources().getDimensionPixelOffset(R.dimen.pageMargin);
         float pageOffset = getResources().getDimensionPixelOffset(R.dimen.offset);
-
         viewPager.setPageTransformer((page, position) -> {
             float myOffset = position * -(2 * pageOffset + pageMargin);
             if (position < -1) {
@@ -110,29 +108,20 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onPageSelected(int position) {
                 super.onPageSelected(position);
-                sliderHandler.removeCallbacks(sliderRunnable);
-                sliderHandler.postDelayed(sliderRunnable, 3000);
+
             }
         });
 
     }
 
-    private Runnable sliderRunnable = new Runnable() {
-        @Override
-        public void run() {
-            viewPager.setCurrentItem(viewPager.getCurrentItem() + 1);
-        }
-    };
-
     @Override
     protected void onPause() {
         super.onPause();
-        sliderHandler.removeCallbacks(sliderRunnable);
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        sliderHandler.postDelayed(sliderRunnable, 3000);
+
     }
 }

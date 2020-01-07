@@ -13,6 +13,7 @@ import com.example.acrepairpreview.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /**
  * @author Jaypatelbond
@@ -81,5 +82,10 @@ public class SettingsActivity extends BaseActivity {
                 startActivity(new Intent(SettingsActivity.this, ChangeLanguageActivity.class));
             }
         });
+    }
+
+    @OnClick(R.id.imageViewBack)
+    public void onViewClicked() {
+        finish();
     }
 }

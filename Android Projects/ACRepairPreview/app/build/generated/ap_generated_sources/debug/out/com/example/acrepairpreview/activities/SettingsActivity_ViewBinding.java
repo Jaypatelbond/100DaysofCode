@@ -9,6 +9,7 @@ import androidx.annotation.CallSuper;
 import androidx.annotation.UiThread;
 import androidx.appcompat.widget.Toolbar;
 import butterknife.Unbinder;
+import butterknife.internal.DebouncingOnClickListener;
 import butterknife.internal.Utils;
 import com.example.acrepairpreview.R;
 import java.lang.IllegalStateException;
@@ -17,17 +18,28 @@ import java.lang.Override;
 public class SettingsActivity_ViewBinding implements Unbinder {
   private SettingsActivity target;
 
+  private View view7f0900c8;
+
   @UiThread
   public SettingsActivity_ViewBinding(SettingsActivity target) {
     this(target, target.getWindow().getDecorView());
   }
 
   @UiThread
-  public SettingsActivity_ViewBinding(SettingsActivity target, View source) {
+  public SettingsActivity_ViewBinding(final SettingsActivity target, View source) {
     this.target = target;
 
+    View view;
     target.toolbar = Utils.findRequiredViewAsType(source, R.id.toolbar, "field 'toolbar'", Toolbar.class);
-    target.imageViewBack = Utils.findRequiredViewAsType(source, R.id.imageViewBack, "field 'imageViewBack'", ImageView.class);
+    view = Utils.findRequiredView(source, R.id.imageViewBack, "field 'imageViewBack' and method 'onViewClicked'");
+    target.imageViewBack = Utils.castView(view, R.id.imageViewBack, "field 'imageViewBack'", ImageView.class);
+    view7f0900c8 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked();
+      }
+    });
     target.textViewEditProfile = Utils.findRequiredViewAsType(source, R.id.textViewEditProfile, "field 'textViewEditProfile'", TextView.class);
     target.flEditProfile = Utils.findRequiredViewAsType(source, R.id.flEditProfile, "field 'flEditProfile'", FrameLayout.class);
     target.textViewAboutUs = Utils.findRequiredViewAsType(source, R.id.textViewAboutUs, "field 'textViewAboutUs'", TextView.class);
@@ -83,5 +95,8 @@ public class SettingsActivity_ViewBinding implements Unbinder {
     target.flAppSharing = null;
     target.textViewLogout = null;
     target.flLogout = null;
+
+    view7f0900c8.setOnClickListener(null);
+    view7f0900c8 = null;
   }
 }
