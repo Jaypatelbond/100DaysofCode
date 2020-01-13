@@ -17,7 +17,7 @@
 13        android:allowBackup="true"
 13-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:8:9-35
 14        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-14-->[androidx.core:core:1.1.0] C:\Users\Jaypa\.gradle\caches\transforms-2\files-2.1\8ee1b35c0cca5ecf45cc70e700cb2ca5\core-1.1.0\AndroidManifest.xml:24:18-86
+14-->[androidx.core:core:1.1.0] C:\Users\Jaypa\.gradle\caches\transforms-2\files-2.1\7d1292b989dd095b27ad3d5bac711106\core-1.1.0\AndroidManifest.xml:24:18-86
 15        android:debuggable="true"
 16        android:icon="@mipmap/ic_launcher"
 16-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:9:9-43
@@ -27,80 +27,79 @@
 18-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:11:9-54
 19        android:supportsRtl="true"
 19-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:12:9-35
-20        android:testOnly="true"
-21        android:theme="@style/AppTheme" >
-21-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:13:9-40
-22        <activity android:name="com.example.acrepairpreview.activities.SettingsActivity" />
-22-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:15:9-74
-22-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:15:19-62
-23        <activity android:name="com.example.acrepairpreview.activities.OTPActivity" />
-23-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:16:9-60
-23-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:16:19-57
-24        <activity android:name="com.example.acrepairpreview.activities.ForgotPasswordActivity" />
-24-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:17:9-71
-24-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:17:19-68
-25        <activity android:name="com.example.acrepairpreview.activities.SignUpActivity" />
-25-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:18:9-63
-25-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:18:19-60
-26        <activity android:name="com.example.acrepairpreview.activities.MainActivity" />
-26-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:19:9-61
-26-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:19:19-58
-27        <activity android:name="com.example.acrepairpreview.activities.ChangeLanguageActivity" />
-27-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:20:9-71
-27-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:20:19-68
-28        <activity android:name="com.example.acrepairpreview.activities.WelcomeActivity" >
-28-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:21:9-28:20
-28-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:21:19-61
-29            <intent-filter>
-29-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:22:13-27:29
-30                <action android:name="android.intent.action.MAIN" />
-30-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:23:17-69
-30-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:23:25-66
-31
-32                <category android:name="android.intent.category.LAUNCHER" />
-32-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:25:17-77
-32-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:25:27-74
-33                <category android:name="android.intent.category.DEFAULT" />
-33-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:26:17-76
-33-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:26:27-73
-34            </intent-filter>
-35        </activity>
-36        <activity android:name="com.example.acrepairpreview.activities.BaseActivity" />
-36-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:29:9-61
-36-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:29:19-58
-37        <activity
-37-->[com.akexorcist:localizationactivity:1.2.2] C:\Users\Jaypa\.gradle\caches\transforms-2\files-2.1\a876814de9bc413facb5d2bfdf7c4fef\jetified-localizationactivity-1.2.2\AndroidManifest.xml:12:9-14:69
-38            android:name="com.akexorcist.localizationactivity.ui.BlankDummyActivity"
-38-->[com.akexorcist:localizationactivity:1.2.2] C:\Users\Jaypa\.gradle\caches\transforms-2\files-2.1\a876814de9bc413facb5d2bfdf7c4fef\jetified-localizationactivity-1.2.2\AndroidManifest.xml:13:13-85
-39            android:theme="@android:style/Theme.Black.NoTitleBar" />
-39-->[com.akexorcist:localizationactivity:1.2.2] C:\Users\Jaypa\.gradle\caches\transforms-2\files-2.1\a876814de9bc413facb5d2bfdf7c4fef\jetified-localizationactivity-1.2.2\AndroidManifest.xml:14:13-66
-40
-41        <provider
-41-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Jaypa\.gradle\caches\transforms-2\files-2.1\be0f404d39a23b1aea0ebb8c2c8d725a\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
-42            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-42-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Jaypa\.gradle\caches\transforms-2\files-2.1\be0f404d39a23b1aea0ebb8c2c8d725a\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
-43            android:authorities="com.example.acrepairpreview.lifecycle-process"
-43-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Jaypa\.gradle\caches\transforms-2\files-2.1\be0f404d39a23b1aea0ebb8c2c8d725a\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
-44            android:exported="false"
-44-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Jaypa\.gradle\caches\transforms-2\files-2.1\be0f404d39a23b1aea0ebb8c2c8d725a\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
-45            android:multiprocess="true" />
-45-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Jaypa\.gradle\caches\transforms-2\files-2.1\be0f404d39a23b1aea0ebb8c2c8d725a\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
-46
-47        <activity
-47-->[com.jakewharton:process-phoenix:2.0.0] C:\Users\Jaypa\.gradle\caches\transforms-2\files-2.1\b3f0f6967f55447e823204777af173d3\jetified-process-phoenix-2.0.0\AndroidManifest.xml:8:9-11:75
-48            android:name="com.jakewharton.processphoenix.ProcessPhoenix"
-48-->[com.jakewharton:process-phoenix:2.0.0] C:\Users\Jaypa\.gradle\caches\transforms-2\files-2.1\b3f0f6967f55447e823204777af173d3\jetified-process-phoenix-2.0.0\AndroidManifest.xml:9:13-73
-49            android:process=":phoenix"
-49-->[com.jakewharton:process-phoenix:2.0.0] C:\Users\Jaypa\.gradle\caches\transforms-2\files-2.1\b3f0f6967f55447e823204777af173d3\jetified-process-phoenix-2.0.0\AndroidManifest.xml:10:13-39
-50            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-50-->[com.jakewharton:process-phoenix:2.0.0] C:\Users\Jaypa\.gradle\caches\transforms-2\files-2.1\b3f0f6967f55447e823204777af173d3\jetified-process-phoenix-2.0.0\AndroidManifest.xml:11:13-72
-51
-52        <service
-52-->[androidx.room:room-runtime:2.2.3] C:\Users\Jaypa\.gradle\caches\transforms-2\files-2.1\4520b860041d0ac312fc83979f7094f0\room-runtime-2.2.3\AndroidManifest.xml:25:9-27:40
-53            android:name="androidx.room.MultiInstanceInvalidationService"
-53-->[androidx.room:room-runtime:2.2.3] C:\Users\Jaypa\.gradle\caches\transforms-2\files-2.1\4520b860041d0ac312fc83979f7094f0\room-runtime-2.2.3\AndroidManifest.xml:26:13-74
-54            android:exported="false" />
-54-->[androidx.room:room-runtime:2.2.3] C:\Users\Jaypa\.gradle\caches\transforms-2\files-2.1\4520b860041d0ac312fc83979f7094f0\room-runtime-2.2.3\AndroidManifest.xml:27:13-37
-55    </application>
-56
-57</manifest>
+20        android:theme="@style/AppTheme" >
+20-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:13:9-40
+21        <activity android:name="com.example.acrepairpreview.activities.SettingsActivity" />
+21-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:15:9-74
+21-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:15:19-62
+22        <activity android:name="com.example.acrepairpreview.activities.OTPActivity" />
+22-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:16:9-60
+22-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:16:19-57
+23        <activity android:name="com.example.acrepairpreview.activities.ForgotPasswordActivity" />
+23-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:17:9-71
+23-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:17:19-68
+24        <activity android:name="com.example.acrepairpreview.activities.SignUpActivity" />
+24-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:18:9-63
+24-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:18:19-60
+25        <activity android:name="com.example.acrepairpreview.activities.MainActivity" />
+25-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:19:9-61
+25-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:19:19-58
+26        <activity android:name="com.example.acrepairpreview.activities.ChangeLanguageActivity" />
+26-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:20:9-71
+26-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:20:19-68
+27        <activity android:name="com.example.acrepairpreview.activities.WelcomeActivity" >
+27-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:21:9-28:20
+27-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:21:19-61
+28            <intent-filter>
+28-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:22:13-27:29
+29                <action android:name="android.intent.action.MAIN" />
+29-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:23:17-69
+29-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:23:25-66
+30
+31                <category android:name="android.intent.category.LAUNCHER" />
+31-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:25:17-77
+31-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:25:27-74
+32                <category android:name="android.intent.category.DEFAULT" />
+32-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:26:17-76
+32-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:26:27-73
+33            </intent-filter>
+34        </activity>
+35        <activity android:name="com.example.acrepairpreview.activities.BaseActivity" />
+35-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:29:9-61
+35-->E:\Projects\100DaysofCode\Android Projects\ACRepairPreview\app\src\main\AndroidManifest.xml:29:19-58
+36        <activity
+36-->[com.akexorcist:localizationactivity:1.2.2] C:\Users\Jaypa\.gradle\caches\transforms-2\files-2.1\63a710e48761b3e015f31dce31b4b579\jetified-localizationactivity-1.2.2\AndroidManifest.xml:12:9-14:69
+37            android:name="com.akexorcist.localizationactivity.ui.BlankDummyActivity"
+37-->[com.akexorcist:localizationactivity:1.2.2] C:\Users\Jaypa\.gradle\caches\transforms-2\files-2.1\63a710e48761b3e015f31dce31b4b579\jetified-localizationactivity-1.2.2\AndroidManifest.xml:13:13-85
+38            android:theme="@android:style/Theme.Black.NoTitleBar" />
+38-->[com.akexorcist:localizationactivity:1.2.2] C:\Users\Jaypa\.gradle\caches\transforms-2\files-2.1\63a710e48761b3e015f31dce31b4b579\jetified-localizationactivity-1.2.2\AndroidManifest.xml:14:13-66
+39
+40        <provider
+40-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Jaypa\.gradle\caches\transforms-2\files-2.1\c5b896e8d4cd566ebb1b612772b09a4b\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
+41            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+41-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Jaypa\.gradle\caches\transforms-2\files-2.1\c5b896e8d4cd566ebb1b612772b09a4b\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
+42            android:authorities="com.example.acrepairpreview.lifecycle-process"
+42-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Jaypa\.gradle\caches\transforms-2\files-2.1\c5b896e8d4cd566ebb1b612772b09a4b\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
+43            android:exported="false"
+43-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Jaypa\.gradle\caches\transforms-2\files-2.1\c5b896e8d4cd566ebb1b612772b09a4b\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
+44            android:multiprocess="true" />
+44-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Jaypa\.gradle\caches\transforms-2\files-2.1\c5b896e8d4cd566ebb1b612772b09a4b\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
+45
+46        <activity
+46-->[com.jakewharton:process-phoenix:2.0.0] C:\Users\Jaypa\.gradle\caches\transforms-2\files-2.1\cb959776584668d5c39ace42e90e5577\jetified-process-phoenix-2.0.0\AndroidManifest.xml:8:9-11:75
+47            android:name="com.jakewharton.processphoenix.ProcessPhoenix"
+47-->[com.jakewharton:process-phoenix:2.0.0] C:\Users\Jaypa\.gradle\caches\transforms-2\files-2.1\cb959776584668d5c39ace42e90e5577\jetified-process-phoenix-2.0.0\AndroidManifest.xml:9:13-73
+48            android:process=":phoenix"
+48-->[com.jakewharton:process-phoenix:2.0.0] C:\Users\Jaypa\.gradle\caches\transforms-2\files-2.1\cb959776584668d5c39ace42e90e5577\jetified-process-phoenix-2.0.0\AndroidManifest.xml:10:13-39
+49            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+49-->[com.jakewharton:process-phoenix:2.0.0] C:\Users\Jaypa\.gradle\caches\transforms-2\files-2.1\cb959776584668d5c39ace42e90e5577\jetified-process-phoenix-2.0.0\AndroidManifest.xml:11:13-72
+50
+51        <service
+51-->[androidx.room:room-runtime:2.2.3] C:\Users\Jaypa\.gradle\caches\transforms-2\files-2.1\957ad36f0ade3ef686dafe00874e77eb\room-runtime-2.2.3\AndroidManifest.xml:25:9-27:40
+52            android:name="androidx.room.MultiInstanceInvalidationService"
+52-->[androidx.room:room-runtime:2.2.3] C:\Users\Jaypa\.gradle\caches\transforms-2\files-2.1\957ad36f0ade3ef686dafe00874e77eb\room-runtime-2.2.3\AndroidManifest.xml:26:13-74
+53            android:exported="false" />
+53-->[androidx.room:room-runtime:2.2.3] C:\Users\Jaypa\.gradle\caches\transforms-2\files-2.1\957ad36f0ade3ef686dafe00874e77eb\room-runtime-2.2.3\AndroidManifest.xml:27:13-37
+54    </application>
+55
+56</manifest>
