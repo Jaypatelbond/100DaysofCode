@@ -43,14 +43,6 @@ public class BannerAdapter extends RecyclerView.Adapter<BannerAdapter.BannerView
         return 5;
     }
 
-    public int getCount(){
-        return Integer.MAX_VALUE;
-    }
-
-    public int getRealCount(){
-        return bannerItems.size();
-    }
-
     public class BannerViewHolder extends RecyclerView.ViewHolder {
         private ImageView imageView;
 
