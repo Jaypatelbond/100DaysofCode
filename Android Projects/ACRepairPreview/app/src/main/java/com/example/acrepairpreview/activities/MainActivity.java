@@ -27,8 +27,8 @@ import butterknife.ButterKnife;
 
 /**
  * @author Jaypatelbond
- * @apiNote @https://github.com/alibaba/UltraViewPager
- * @implNote Checkout the @link for implementation of View.OnClickListener, CompoundButton.OnCheckedChangeListener
+ * @apiNote
+ * @implNote 
  */
 
 public class MainActivity extends BaseActivity {

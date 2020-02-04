@@ -4,17 +4,7 @@
             "outputFile": "E:\\Projects\\100DaysofCode\\Android Projects\\ACRepairPreview\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Jaypa\\.gradle\\caches\\transforms-2\\files-2.1\\7d7462e2b02f25eb859eb2ec601bdd31\\appcompat-1.1.0\\res\\values-v24\\values-v24.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,212",
-                        "endColumns": "156,134",
-                        "endOffsets": "207,342"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Jaypa\\.gradle\\caches\\transforms-2\\files-2.1\\70e55aebe16339e37ba23c0cc6759ff0\\media-1.0.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\Jaypa\\.gradle\\caches\\transforms-2\\files-2.1\\2d155e131a1c69b41b1b83c101676622\\media-1.0.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -28,6 +18,16 @@
                         "startOffsets": "347,413,474,540",
                         "endColumns": "65,60,65,66",
                         "endOffsets": "408,469,535,602"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Jaypa\\.gradle\\caches\\transforms-2\\files-2.1\\9b01ba1f39563543bc4d34c585bc19fa\\appcompat-1.1.0\\res\\values-v24\\values-v24.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,212",
+                        "endColumns": "156,134",
+                        "endOffsets": "207,342"
                     }
                 }
             ]

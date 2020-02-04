@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clActivityMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/app_black">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="21dp"
+                    android:layout_marginStart="25dp"
+                    android:background="@drawable/ic_location_tag"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    style="@style/whiteTextViewStyleMediumSizePoppins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/your_location"
+                    android:textColor="@color/white" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <ImageView
+                android:id="@+id/imageViewNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toolbar"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-30dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/ic_notification"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/textViewLocation"
+                style="@style/whiteTextViewStyleMediumSizePoppins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="-12dp"
+                android:text="@string/your_location"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/textViewLocation"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/line_dashed"
+                android:contentDescription="@null"
+                android:layerType="software" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="-70dp"
+            android:background="@drawable/cardview_curve_top">
+
+            <com.tmall.ultraviewpager.UltraViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:overScrollMode="never"
+                />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="never"
+            tools:listitem="@layout/dynamic_home"
+            tools:targetApi="lollipop" />
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
